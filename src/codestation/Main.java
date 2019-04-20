@@ -5,7 +5,12 @@
  */
 package codestation;
 
-import java.Javinha;
+import java.awt.Cursor;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
+import javinha.Javinha;
 
 /**
  *
@@ -25,7 +30,9 @@ public class Main extends javax.swing.JFrame {
         setResizable(false);
         setDefaultCloseOperation(Main.EXIT_ON_CLOSE);
     }
-
+    
+    int xx, xy;
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -36,6 +43,7 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         PanelMain = new javax.swing.JPanel();
+        Git = new javax.swing.JLabel();
         CodeStation = new javax.swing.JLabel();
         JavaScript = new javax.swing.JLabel();
         Java = new javax.swing.JLabel();
@@ -59,6 +67,10 @@ public class Main extends javax.swing.JFrame {
         PanelMain.setPreferredSize(new java.awt.Dimension(810, 580));
         PanelMain.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Git.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Git.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/githubinho.png"))); // NOI18N
+        PanelMain.add(Git, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 70, 60));
+
         CodeStation.setBackground(new java.awt.Color(255, 255, 255));
         CodeStation.setFont(new java.awt.Font("Monospaced", 0, 48)); // NOI18N
         CodeStation.setForeground(new java.awt.Color(255, 255, 255));
@@ -67,11 +79,11 @@ public class Main extends javax.swing.JFrame {
         PanelMain.add(CodeStation, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 810, 280));
 
         JavaScript.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JavaScript.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/150x150.png"))); // NOI18N
+        JavaScript.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/javascriptinhofilho.png"))); // NOI18N
         PanelMain.add(JavaScript, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, 400, 280));
 
         Java.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Java.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/200x200.png"))); // NOI18N
+        Java.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/javinha.png"))); // NOI18N
         Java.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JavaMouseClicked(evt);
@@ -83,6 +95,11 @@ public class Main extends javax.swing.JFrame {
         Minimizar.setForeground(new java.awt.Color(171, 171, 171));
         Minimizar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Minimizar.setText("-");
+        Minimizar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MinimizarMouseClicked(evt);
+            }
+        });
         PanelMain.add(Minimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 0, 20, 20));
 
         Fechar.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
@@ -97,6 +114,16 @@ public class Main extends javax.swing.JFrame {
         PanelMain.add(Fechar, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 0, 20, 20));
 
         Superior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/minimazaExpandeFecha.png"))); // NOI18N
+        Superior.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                SuperiorMouseDragged(evt);
+            }
+        });
+        Superior.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                SuperiorMousePressed(evt);
+            }
+        });
         PanelMain.add(Superior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         Laranja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/java.png"))); // NOI18N
@@ -109,7 +136,7 @@ public class Main extends javax.swing.JFrame {
         PanelFundo.setBackground(new java.awt.Color(255, 255, 255));
 
         Fundo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/peekaboo.png"))); // NOI18N
+        Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/wallpaper.png"))); // NOI18N
 
         javax.swing.GroupLayout PanelFundoLayout = new javax.swing.GroupLayout(PanelFundo);
         PanelFundo.setLayout(PanelFundoLayout);
@@ -146,10 +173,29 @@ public class Main extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_FecharMouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
+    private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
+        // TODO add your handling code here:
+        setState(ICONIFIED);
+    }//GEN-LAST:event_MinimizarMouseClicked
+
+    private void SuperiorMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SuperiorMouseDragged
+        // TODO add your handling code here:
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        
+        this.setLocation(x-xx, y-xy);
+    }//GEN-LAST:event_SuperiorMouseDragged
+
+    private void SuperiorMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SuperiorMousePressed
+        // TODO add your handling code here:
+        xx = evt.getX();
+        xy = evt.getY();
+    }//GEN-LAST:event_SuperiorMousePressed
+
+/**
+ * @param args the command line arguments
+ */
+public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -160,18 +206,41 @@ public class Main extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
-                }
+                
+
+
+
+}
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Main.class
+
+.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        
+
+
+
+} catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Main.class
+
+.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        
+
+
+
+} catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Main.class
+
+.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        
+
+
+
+} catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Main.class
+
+.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
@@ -185,6 +254,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel CodeStation;
     private javax.swing.JLabel Fechar;
     private javax.swing.JLabel Fundo;
+    private javax.swing.JLabel Git;
     private javax.swing.JLabel Java;
     private javax.swing.JLabel JavaScript;
     private javax.swing.JLabel Laranja;
