@@ -1,4 +1,4 @@
-package javinha;
+package javinha.capitulo2;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -7,27 +7,27 @@ package javinha;
  */
 
 
-import javinha.capitulo1.JavaCapitulo1;
+import javinha.capitulo1.*;
 import codestation.Main;
-import javinha.capitulo2.JavaCapitulo2;
+import javinha.Javinha;
 
 /**
  *
  * @author archwinlinu
  */
-public class Javinha extends javax.swing.JFrame {
+public class JavaCapitulo2 extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public Javinha() {
+    public JavaCapitulo2() {
         setUndecorated(true);
         initComponents();
         setSize(810, 580);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        setDefaultCloseOperation(Javinha.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JavaCapitulo2.EXIT_ON_CLOSE);
     }
 
     int xx, xy;
@@ -65,6 +65,9 @@ public class Javinha extends javax.swing.JFrame {
         Texto8 = new javax.swing.JLabel();
         Texto9 = new javax.swing.JLabel();
         Texto10 = new javax.swing.JLabel();
+        Texto11 = new javax.swing.JLabel();
+        Texto12 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(810, 580));
@@ -131,21 +134,12 @@ public class Javinha extends javax.swing.JFrame {
         Capitulo1.setForeground(new java.awt.Color(248, 152, 29));
         Capitulo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Capitulo1.setText("Capítulo 1");
-        Capitulo1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Capitulo1MouseClicked(evt);
-            }
-        });
 
         Capitulo2.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Capitulo2.setForeground(new java.awt.Color(248, 152, 29));
         Capitulo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Capitulo2.setText("Capítulo 2");
-        Capitulo2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Capitulo2MouseClicked(evt);
-            }
-        });
+        Capitulo2.setEnabled(false);
 
         Capitulo3.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Capitulo3.setForeground(new java.awt.Color(248, 152, 29));
@@ -201,53 +195,75 @@ public class Javinha extends javax.swing.JFrame {
         Texto1.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Texto1.setForeground(new java.awt.Color(248, 152, 29));
         Texto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto1.setText("JAVA - RESUMO SOBRE O CURSO");
+        Texto1.setText("Capítulo 2");
         Texto1.setToolTipText("");
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto2.setText("O Java está na maioria das plataformas, entretanto, muitas pessoas não o ");
+        Texto2.setText("Ouvi dizer que haveria objetos. No Capítulo 1, colocamos todo o código");
         Texto2.setToolTipText("");
 
         Texto3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto3.setText("conhecem ou sequer sabem que ele existe.");
+        Texto3.setText("no método main( ). Essa não exatamente uma abordagem orientada o objetos");
         Texto3.setToolTipText("");
 
         Texto4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto4.setText("Java é uma Linguagem de Programação  Orientada a Objeto. A característica");
+        Texto4.setText("Na verdade ela definitivamente não é orientada a objetos. Bem, usamos");
         Texto4.setToolTipText("");
 
         Texto5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto5.setText("mais marcante dessa linguagem é que programas criados nele não são");
+        Texto5.setText("alguns objetos, mas não desenvolvemos nenhum tipo de objeto por nossa ");
         Texto5.setToolTipText("");
 
         Texto6.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto6.setText("compilados em código nativo da plataforma. Programas em Java são ");
+        Texto6.setText("própria conta. Portanto, agora temos que deixar esse universo procedimental");
         Texto6.setToolTipText("");
 
         Texto7.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto7.setText("compilados para um ByteCode. Esta afim de aprender mais sobre esse");
+        Texto7.setText("Seguidores devotados surgiram, enquanto os programadores combatiam os ");
         Texto7.setToolTipText("");
 
         Texto8.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto8.setText("fantástico mundo e estar por dentro dos seus conceitos como ByteCode");
+        Texto8.setText("para trás, sair de main( ) e começar a criar alguns objetos por nossa ");
         Texto8.setToolTipText("");
 
         Texto9.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto9.setText("ou o que é uma linguagem de programação então venha e embarque nesse");
+        Texto9.setText("própria conta. Examinaremos o que torna o desenvolvimento orientado a ");
         Texto9.setToolTipText("");
 
         Texto10.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto10.setText("incrivel curso de Java que vai te impressionar!");
+        Texto10.setText("objetos (OO) em java tão divertido. Discutiremos a diferença entre uma");
         Texto10.setToolTipText("");
+
+        Texto11.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Texto11.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Texto11.setText("para fazer até o mesmo applet mais simples funcionar. Mas você pode");
+        Texto11.setToolTipText("");
+
+        Texto12.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Texto12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Texto12.setText("classe e um objeto. Examinaremos como os objetos podem melhorar sua vida");
+        Texto12.setToolTipText("");
+
+        jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
         PanelTexto.setLayout(PanelTextoLayout);
@@ -258,16 +274,22 @@ public class Javinha extends javax.swing.JFrame {
                 .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Texto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Texto2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
-                    .addComponent(Texto3, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
-                    .addComponent(Texto4, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
-                    .addComponent(Texto5, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
-                    .addComponent(Texto6, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
-                    .addComponent(Texto7, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
-                    .addComponent(Texto8, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
-                    .addComponent(Texto9, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
-                    .addComponent(Texto10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE))
+                    .addComponent(Texto2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Texto12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(PanelTextoLayout.createSequentialGroup()
+                .addGap(235, 235, 235)
+                .addComponent(jButton1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PanelTextoLayout.setVerticalGroup(
             PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -280,7 +302,7 @@ public class Javinha extends javax.swing.JFrame {
                 .addComponent(Texto2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto3)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto5)
@@ -294,7 +316,13 @@ public class Javinha extends javax.swing.JFrame {
                 .addComponent(Texto9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto10)
-                .addContainerGap(174, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Texto11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Texto12)
+                .addGap(57, 57, 57)
+                .addComponent(jButton1)
+                .addContainerGap(57, Short.MAX_VALUE))
         );
 
         PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 540, 560));
@@ -309,8 +337,8 @@ public class Javinha extends javax.swing.JFrame {
 
     private void VoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VoltarMouseClicked
         // TODO add your handling code here:
-        Main m = new Main();
-        m.show();
+        Javinha j = new Javinha();
+        j.show();
         this.hide();
     }//GEN-LAST:event_VoltarMouseClicked
 
@@ -319,12 +347,13 @@ public class Javinha extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_FecharMouseClicked
 
-    private void Capitulo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo1MouseClicked
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        JavaCapitulo1 jc1 = new JavaCapitulo1();
-        jc1.show();
+        JavaChecklist j = new JavaChecklist();
+        j.show();
         this.hide();
-    }//GEN-LAST:event_Capitulo1MouseClicked
+        
+    }//GEN-LAST:event_jButton1MouseClicked
 
     private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
         // TODO add your handling code here:
@@ -345,12 +374,9 @@ public class Javinha extends javax.swing.JFrame {
         this.setLocation(x-xx, y-xy);
     }//GEN-LAST:event_SuperiorMouseDragged
 
-    private void Capitulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo2MouseClicked
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        JavaCapitulo2 j = new JavaCapitulo2();
-        this.hide();
-        j.show();
-    }//GEN-LAST:event_Capitulo2MouseClicked
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -369,19 +395,21 @@ public class Javinha extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Javinha.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaCapitulo2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Javinha.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaCapitulo2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Javinha.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaCapitulo2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Javinha.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaCapitulo2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new Javinha().setVisible(true);
+            new JavaCapitulo2().setVisible(true);
         });
     }
 
@@ -401,6 +429,8 @@ public class Javinha extends javax.swing.JFrame {
     private javax.swing.JLabel Superior;
     private javax.swing.JLabel Texto1;
     private javax.swing.JLabel Texto10;
+    private javax.swing.JLabel Texto11;
+    private javax.swing.JLabel Texto12;
     private javax.swing.JLabel Texto2;
     private javax.swing.JLabel Texto3;
     private javax.swing.JLabel Texto4;
@@ -410,5 +440,6 @@ public class Javinha extends javax.swing.JFrame {
     private javax.swing.JLabel Texto8;
     private javax.swing.JLabel Texto9;
     private javax.swing.JLabel Voltar;
+    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }

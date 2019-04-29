@@ -217,9 +217,6 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="Cap&#xed;tulo 1"/>
               </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Capitulo1MouseClicked"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Capitulo2">
               <Properties>
@@ -231,10 +228,8 @@
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="Cap&#xed;tulo 2"/>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Capitulo2MouseClicked"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Capitulo3">
               <Properties>
@@ -270,17 +265,24 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="Icon" alignment="0" max="32767" attributes="0"/>
                           <Component id="Texto1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="Texto2" alignment="1" pref="520" max="32767" attributes="0"/>
-                          <Component id="Texto3" alignment="0" pref="520" max="32767" attributes="0"/>
-                          <Component id="Texto4" alignment="0" pref="520" max="32767" attributes="0"/>
-                          <Component id="Texto5" alignment="0" pref="520" max="32767" attributes="0"/>
-                          <Component id="Texto6" alignment="0" pref="520" max="32767" attributes="0"/>
-                          <Component id="Texto7" alignment="0" pref="520" max="32767" attributes="0"/>
-                          <Component id="Texto8" alignment="0" pref="520" max="32767" attributes="0"/>
-                          <Component id="Texto9" alignment="0" pref="520" max="32767" attributes="0"/>
-                          <Component id="Texto10" alignment="1" pref="520" max="32767" attributes="0"/>
+                          <Component id="Texto2" alignment="1" max="32767" attributes="0"/>
+                          <Component id="Texto3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Texto4" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Texto5" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Texto6" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Texto7" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Texto8" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Texto9" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Texto10" alignment="1" max="32767" attributes="0"/>
+                          <Component id="Texto11" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Texto12" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="235" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -295,7 +297,7 @@
                       <Component id="Texto2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Texto3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="Texto4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Texto5" min="-2" max="-2" attributes="0"/>
@@ -309,7 +311,13 @@
                       <Component id="Texto9" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Texto10" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="174" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Texto11" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Texto12" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="57" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -332,7 +340,7 @@
                   <Color blue="1d" green="98" red="f8" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="JAVA - RESUMO SOBRE O CURSO"/>
+                <Property name="text" type="java.lang.String" value="Cap&#xed;tulo 2"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -342,7 +350,7 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="O Java est&#xe1; na maioria das plataformas, entretanto, muitas pessoas n&#xe3;o o "/>
+                <Property name="text" type="java.lang.String" value="Ouvi dizer que haveria objetos. No Cap&#xed;tulo 1, colocamos todo o c&#xf3;digo"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -352,7 +360,7 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="conhecem ou sequer sabem que ele existe."/>
+                <Property name="text" type="java.lang.String" value="no m&#xe9;todo main( ). Essa n&#xe3;o exatamente uma abordagem orientada o objetos"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -362,7 +370,7 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="Java &#xe9; uma Linguagem de Programa&#xe7;&#xe3;o  Orientada a Objeto. A caracter&#xed;stica"/>
+                <Property name="text" type="java.lang.String" value="Na verdade ela definitivamente n&#xe3;o &#xe9; orientada a objetos. Bem, usamos"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -372,7 +380,7 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="mais marcante dessa linguagem &#xe9; que programas criados nele n&#xe3;o s&#xe3;o"/>
+                <Property name="text" type="java.lang.String" value="alguns objetos, mas n&#xe3;o desenvolvemos nenhum tipo de objeto por nossa "/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -382,7 +390,7 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="compilados em c&#xf3;digo nativo da plataforma. Programas em Java s&#xe3;o "/>
+                <Property name="text" type="java.lang.String" value="pr&#xf3;pria conta. Portanto, agora temos que deixar esse universo procedimental"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -392,7 +400,7 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="compilados para um ByteCode. Esta afim de aprender mais sobre esse"/>
+                <Property name="text" type="java.lang.String" value="Seguidores devotados surgiram, enquanto os programadores combatiam os "/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -402,7 +410,7 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="fant&#xe1;stico mundo e estar por dentro dos seus conceitos como ByteCode"/>
+                <Property name="text" type="java.lang.String" value="para tr&#xe1;s, sair de main( ) e come&#xe7;ar a criar alguns objetos por nossa "/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -412,7 +420,7 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="ou o que &#xe9; uma linguagem de programa&#xe7;&#xe3;o ent&#xe3;o venha e embarque nesse"/>
+                <Property name="text" type="java.lang.String" value="pr&#xf3;pria conta. Examinaremos o que torna o desenvolvimento orientado a "/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -422,9 +430,38 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="text" type="java.lang.String" value="incrivel curso de Java que vai te impressionar!"/>
+                <Property name="text" type="java.lang.String" value="objetos (OO) em java t&#xe3;o divertido. Discutiremos a diferen&#xe7;a entre uma"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Texto11">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="para fazer at&#xe9; o mesmo applet mais simples funcionar. Mas voc&#xea; pode"/>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Texto12">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="12" style="0"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="classe e um objeto. Examinaremos como os objetos podem melhorar sua vida"/>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton1"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseClicked"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
