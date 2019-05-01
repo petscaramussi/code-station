@@ -9,6 +9,7 @@ package javinha;
 
 import javinha.capitulo1.JavaCapitulo1;
 import codestation.Main;
+import javax.swing.JOptionPane;
 import javinha.capitulo2.JavaCapitulo2;
 
 /**
@@ -151,6 +152,11 @@ public class Javinha extends javax.swing.JFrame {
         Capitulo3.setForeground(new java.awt.Color(248, 152, 29));
         Capitulo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Capitulo3.setText("Capítulo 3");
+        Capitulo3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Capitulo3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout PanelLateralLayout = new javax.swing.GroupLayout(PanelLateral);
         PanelLateral.setLayout(PanelLateralLayout);
@@ -351,6 +357,11 @@ public class Javinha extends javax.swing.JFrame {
         this.hide();
         j.show();
     }//GEN-LAST:event_Capitulo2MouseClicked
+
+    private void Capitulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo3MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Este capítulo ainda não está disponível\nSentimos muito");
+    }//GEN-LAST:event_Capitulo3MouseClicked
 
     /**
      * @param args the command line arguments

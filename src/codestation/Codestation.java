@@ -23,6 +23,16 @@ public class Codestation {
         // tela essa que irá fazer um checklist de todas as perguntas
         // caso selecionada e apertado o botao
         // a pessoa sera redirecionada para a questao selecionada
+        
+        // fazer uma tela para o final das perguntas
+        // tela ira parabenizar a pessoa
+        // ira possuir um botao para o menu
+        // talvez possua uma pontuação, nada que uma label fixa nao resolva
+        
+        // fazer uma telinha de ajuda
+        // ainda nao ha nada especificado
+        
+        // arrumar a check lista, pois esta desalinhada
     }
     
 }

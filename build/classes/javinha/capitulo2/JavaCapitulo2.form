@@ -217,6 +217,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="Cap&#xed;tulo 1"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Capitulo1MouseClicked"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Capitulo2">
               <Properties>
@@ -242,6 +245,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="Cap&#xed;tulo 3"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Capitulo3MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

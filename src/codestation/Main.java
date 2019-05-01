@@ -5,11 +5,11 @@
  */
 package codestation;
 
-import java.awt.Cursor;
-import java.awt.Point;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionAdapter;
+import java.net.URI;
+import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javinha.Javinha;
 
 /**
@@ -69,6 +69,11 @@ public class Main extends javax.swing.JFrame {
 
         Git.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Git.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/githubinho.png"))); // NOI18N
+        Git.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                GitMouseClicked(evt);
+            }
+        });
         PanelMain.add(Git, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 70, 60));
 
         CodeStation.setBackground(new java.awt.Color(255, 255, 255));
@@ -80,6 +85,11 @@ public class Main extends javax.swing.JFrame {
 
         JavaScript.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JavaScript.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/javascriptinhofilho.png"))); // NOI18N
+        JavaScript.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                JavaScriptMouseClicked(evt);
+            }
+        });
         PanelMain.add(JavaScript, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, 400, 280));
 
         Java.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -191,6 +201,21 @@ public class Main extends javax.swing.JFrame {
         xx = evt.getX();
         xy = evt.getY();
     }//GEN-LAST:event_SuperiorMousePressed
+
+    private void GitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GitMouseClicked
+        try {
+            // TODO add your handling code here:
+            URI u = new URI("https://github.com/dalacorte");
+            java.awt.Desktop.getDesktop().browse(u);
+        } catch (Exception ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_GitMouseClicked
+
+    private void JavaScriptMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JavaScriptMouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Esta linguaguem ainda não está disponível\nSentimos muito");
+    }//GEN-LAST:event_JavaScriptMouseClicked
 
 /**
  * @param args the command line arguments

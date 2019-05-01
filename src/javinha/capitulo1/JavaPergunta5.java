@@ -47,12 +47,8 @@ public class JavaPergunta5 extends javax.swing.JFrame {
         Fechar = new javax.swing.JLabel();
         Superior = new javax.swing.JLabel();
         PanelLateral = new javax.swing.JPanel();
-        Separador1 = new javax.swing.JSeparator();
         Separador2 = new javax.swing.JSeparator();
-        Separador3 = new javax.swing.JSeparator();
-        Capitulo1 = new javax.swing.JLabel();
         Capitulo2 = new javax.swing.JLabel();
-        Capitulo3 = new javax.swing.JLabel();
         PanelTexto = new javax.swing.JPanel();
         Icon = new javax.swing.JLabel();
         Texto1 = new javax.swing.JLabel();
@@ -125,20 +121,15 @@ public class JavaPergunta5 extends javax.swing.JFrame {
         PanelLateral.setBackground(new java.awt.Color(255, 255, 255));
         PanelLateral.setForeground(new java.awt.Color(240, 240, 240));
 
-        Capitulo1.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        Capitulo1.setForeground(new java.awt.Color(248, 152, 29));
-        Capitulo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Capitulo1.setText("Capítulo 1");
-
         Capitulo2.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Capitulo2.setForeground(new java.awt.Color(248, 152, 29));
         Capitulo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Capitulo2.setText("Capítulo 2");
-
-        Capitulo3.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        Capitulo3.setForeground(new java.awt.Color(248, 152, 29));
-        Capitulo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Capitulo3.setText("Capítulo 3");
+        Capitulo2.setText("Checklist");
+        Capitulo2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Capitulo2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout PanelLateralLayout = new javax.swing.GroupLayout(PanelLateral);
         PanelLateral.setLayout(PanelLateralLayout);
@@ -149,34 +140,20 @@ public class JavaPergunta5 extends javax.swing.JFrame {
                 .addGroup(PanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PanelLateralLayout.createSequentialGroup()
                         .addGap(51, 51, 51)
-                        .addGroup(PanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Separador1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Separador2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Separador3, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Separador2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(58, 58, 58))
                     .addGroup(PanelLateralLayout.createSequentialGroup()
-                        .addGroup(PanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Capitulo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Capitulo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Capitulo3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Capitulo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
         );
         PanelLateralLayout.setVerticalGroup(
             PanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelLateralLayout.createSequentialGroup()
-                .addGap(198, 198, 198)
-                .addComponent(Capitulo1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Separador1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(245, 245, 245)
                 .addComponent(Capitulo2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Separador2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Capitulo3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Separador3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(227, Short.MAX_VALUE))
+                .addContainerGap(274, Short.MAX_VALUE))
         );
 
         PanelMain.add(PanelLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 270, 560));
@@ -347,6 +324,13 @@ public class JavaPergunta5 extends javax.swing.JFrame {
         this.setLocation(x-xx, y-xy);
     }//GEN-LAST:event_SuperiorMouseDragged
 
+    private void Capitulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo2MouseClicked
+        // TODO add your handling code here:
+        JavaChecklist j = new JavaChecklist();
+        j.show();
+        this.hide();
+    }//GEN-LAST:event_Capitulo2MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -387,18 +371,14 @@ public class JavaPergunta5 extends javax.swing.JFrame {
     private javax.swing.JRadioButton Button3;
     private javax.swing.JRadioButton Button4;
     private javax.swing.JRadioButton Button5;
-    private javax.swing.JLabel Capitulo1;
     private javax.swing.JLabel Capitulo2;
-    private javax.swing.JLabel Capitulo3;
     private javax.swing.JLabel Fechar;
     private javax.swing.JLabel Icon;
     private javax.swing.JLabel Minimizar;
     private javax.swing.JPanel PanelLateral;
     private javax.swing.JPanel PanelMain;
     private javax.swing.JPanel PanelTexto;
-    private javax.swing.JSeparator Separador1;
     private javax.swing.JSeparator Separador2;
-    private javax.swing.JSeparator Separador3;
     private javax.swing.JLabel Superior;
     private javax.swing.JLabel Texto1;
     private javax.swing.JLabel Texto2;

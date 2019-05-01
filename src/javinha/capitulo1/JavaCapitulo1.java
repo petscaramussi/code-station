@@ -8,7 +8,9 @@ package javinha.capitulo1;
 
 
 import codestation.Main;
+import javax.swing.JOptionPane;
 import javinha.Javinha;
+import javinha.capitulo2.JavaCapitulo2;
 
 /**
  *
@@ -139,11 +141,21 @@ public class JavaCapitulo1 extends javax.swing.JFrame {
         Capitulo2.setForeground(new java.awt.Color(248, 152, 29));
         Capitulo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Capitulo2.setText("Capítulo 2");
+        Capitulo2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Capitulo2MouseClicked(evt);
+            }
+        });
 
         Capitulo3.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Capitulo3.setForeground(new java.awt.Color(248, 152, 29));
         Capitulo3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Capitulo3.setText("Capítulo 3");
+        Capitulo3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Capitulo3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout PanelLateralLayout = new javax.swing.GroupLayout(PanelLateral);
         PanelLateral.setLayout(PanelLateralLayout);
@@ -367,6 +379,18 @@ public class JavaCapitulo1 extends javax.swing.JFrame {
         
         this.setLocation(x-xx, y-xy);
     }//GEN-LAST:event_SuperiorMouseDragged
+
+    private void Capitulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo2MouseClicked
+        // TODO add your handling code here:
+        JavaCapitulo2 j = new JavaCapitulo2();
+        j.show();
+        this.hide();
+    }//GEN-LAST:event_Capitulo2MouseClicked
+
+    private void Capitulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo3MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Este capítulo ainda não está disponível\nSentimos muito");
+    }//GEN-LAST:event_Capitulo3MouseClicked
 
     /**
      * @param args the command line arguments
