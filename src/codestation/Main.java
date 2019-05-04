@@ -48,6 +48,7 @@ public class Main extends javax.swing.JFrame {
         JavaScript = new javax.swing.JLabel();
         Java = new javax.swing.JLabel();
         Minimizar = new javax.swing.JLabel();
+        Ajuda = new javax.swing.JLabel();
         Fechar = new javax.swing.JLabel();
         Superior = new javax.swing.JLabel();
         Laranja = new javax.swing.JLabel();
@@ -111,6 +112,17 @@ public class Main extends javax.swing.JFrame {
             }
         });
         PanelMain.add(Minimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 0, 20, 20));
+
+        Ajuda.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        Ajuda.setForeground(new java.awt.Color(171, 171, 171));
+        Ajuda.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Ajuda.setText("?");
+        Ajuda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AjudaMouseClicked(evt);
+            }
+        });
+        PanelMain.add(Ajuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 0, 20, 20));
 
         Fechar.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Fechar.setForeground(new java.awt.Color(171, 171, 171));
@@ -217,6 +229,13 @@ public class Main extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Esta linguaguem ainda não está disponível\nSentimos muito");
     }//GEN-LAST:event_JavaScriptMouseClicked
 
+    private void AjudaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AjudaMouseClicked
+        // TODO add your handling code here:
+        Ajuda a = new Ajuda();
+        a.show();
+        this.hide();
+    }//GEN-LAST:event_AjudaMouseClicked
+
 /**
  * @param args the command line arguments
  */
@@ -275,6 +294,7 @@ public static void main(String args[]) {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Ajuda;
     private javax.swing.JLabel Amarelo;
     private javax.swing.JLabel CodeStation;
     private javax.swing.JLabel Fechar;
