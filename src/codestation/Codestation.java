@@ -19,11 +19,6 @@ public class Codestation {
         
         // Ideias para o futuro:
         
-        // fazer uma tela antes das perguntas
-        // tela essa que irá fazer um checklist de todas as perguntas
-        // caso selecionada e apertado o botao
-        // a pessoa sera redirecionada para a questao selecionada
-        
         // fazer uma tela para o final das perguntas
         // tela ira parabenizar a pessoa
         // ira possuir um botao para o menu
@@ -31,8 +26,6 @@ public class Codestation {
         
         // fazer uma telinha de ajuda
         // ainda nao ha nada especificado
-        
-        // arrumar a check lista, pois esta desalinhada
     }
     
 }

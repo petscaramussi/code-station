@@ -46,7 +46,6 @@ public class JavaFinal extends javax.swing.JFrame {
         Superior = new javax.swing.JLabel();
         PanelTexto = new javax.swing.JPanel();
         Icon = new javax.swing.JLabel();
-        Texto1 = new javax.swing.JLabel();
         Texto2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -112,11 +111,6 @@ public class JavaFinal extends javax.swing.JFrame {
         Icon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/java2.png"))); // NOI18N
 
-        Texto1.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        Texto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto1.setText(" ");
-        Texto1.setToolTipText("");
-
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Texto2.setForeground(new java.awt.Color(248, 152, 29));
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -129,11 +123,7 @@ public class JavaFinal extends javax.swing.JFrame {
             PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelTextoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, 790, Short.MAX_VALUE)
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addComponent(Texto1, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, 790, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PanelTextoLayout.createSequentialGroup()
@@ -145,10 +135,8 @@ public class JavaFinal extends javax.swing.JFrame {
             PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelTextoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Icon)
-                .addGap(67, 67, 67)
-                .addComponent(Texto1)
-                .addContainerGap(329, Short.MAX_VALUE))
+                .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(421, 421, 421))
             .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PanelTextoLayout.createSequentialGroup()
                     .addGap(155, 155, 155)
@@ -238,7 +226,6 @@ public class JavaFinal extends javax.swing.JFrame {
     private javax.swing.JPanel PanelMain;
     private javax.swing.JPanel PanelTexto;
     private javax.swing.JLabel Superior;
-    private javax.swing.JLabel Texto1;
     private javax.swing.JLabel Texto2;
     private javax.swing.JLabel Voltar;
     private javax.swing.ButtonGroup buttonGroup1;
