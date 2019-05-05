@@ -16,19 +16,19 @@ import javinha.Javinha;
  *
  * @author archwinlinu
  */
-public class Ajuda extends javax.swing.JFrame {
+public class Outros extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public Ajuda() {
+    public Outros() {
         setUndecorated(true);
         initComponents();
         setSize(810, 580);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        setDefaultCloseOperation(Ajuda.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(Outros.EXIT_ON_CLOSE);
     }
 
     int xx, xy;
@@ -142,21 +142,11 @@ public class Ajuda extends javax.swing.JFrame {
         Texto7.setForeground(new java.awt.Color(111, 197, 216));
         Texto7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto7.setText("Gostaria de obter mais informações sobre o software");
-        Texto7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Texto7MouseClicked(evt);
-            }
-        });
 
         Texto8.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto8.setForeground(new java.awt.Color(111, 197, 216));
         Texto8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto8.setText("Gostaria de entrar em contato com algum dos desenvolvedores");
-        Texto8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Texto8MouseClicked(evt);
-            }
-        });
 
         Texto9.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto9.setForeground(new java.awt.Color(111, 197, 216));
@@ -280,18 +270,6 @@ public class Ajuda extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Texto6MouseClicked
 
-    private void Texto7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Texto7MouseClicked
-        // TODO add your handling code here:
-        InformacoesSoftware i = new InformacoesSoftware();
-        i.show();
-    }//GEN-LAST:event_Texto7MouseClicked
-
-    private void Texto8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Texto8MouseClicked
-        // TODO add your handling code here:
-        ContatoDev c = new ContatoDev();
-        c.show();
-    }//GEN-LAST:event_Texto8MouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -310,27 +288,29 @@ public class Ajuda extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Ajuda.class
+            java.util.logging.Logger.getLogger(Outros.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Ajuda.class
+            java.util.logging.Logger.getLogger(Outros.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Ajuda.class
+            java.util.logging.Logger.getLogger(Outros.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Ajuda.class
+            java.util.logging.Logger.getLogger(Outros.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new Ajuda().setVisible(true);
+            new Outros().setVisible(true);
         });
     }
 

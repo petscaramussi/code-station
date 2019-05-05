@@ -228,9 +228,6 @@
                 <Property name="horizontalAlignment" type="int" value="2"/>
                 <Property name="text" type="java.lang.String" value="Gostaria de obter mais informa&#xe7;&#xf5;es sobre o software"/>
               </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Texto7MouseClicked"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Texto8">
               <Properties>
@@ -243,9 +240,6 @@
                 <Property name="horizontalAlignment" type="int" value="2"/>
                 <Property name="text" type="java.lang.String" value="Gostaria de entrar em contato com algum dos desenvolvedores"/>
               </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Texto8MouseClicked"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Texto9">
               <Properties>

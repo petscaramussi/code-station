@@ -24,8 +24,11 @@ public class Codestation {
         // ira possuir um botao para o menu
         // talvez possua uma pontuação, nada que uma label fixa nao resolva
         
-        // fazer uma telinha de ajuda
-        // ainda nao ha nada especificado
+        // termina tela de ajuda
+        // termina tela de informacoes software
+        // termina tela de contato dev
+        // termina tela de conhecer dev
+        // termina tela de outros
     }
     
 }
