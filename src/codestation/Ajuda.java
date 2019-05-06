@@ -162,6 +162,11 @@ public class Ajuda extends javax.swing.JFrame {
         Texto9.setForeground(new java.awt.Color(111, 197, 216));
         Texto9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto9.setText("Gostaria de conhecer os desenvolvedores");
+        Texto9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Texto9MouseClicked(evt);
+            }
+        });
 
         Texto1.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto1.setForeground(new java.awt.Color(111, 197, 216));
@@ -291,6 +296,12 @@ public class Ajuda extends javax.swing.JFrame {
         ContatoDev c = new ContatoDev();
         c.show();
     }//GEN-LAST:event_Texto8MouseClicked
+
+    private void Texto9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Texto9MouseClicked
+        // TODO add your handling code here:
+        ConhecerDev c = new ConhecerDev();
+        c.show();
+    }//GEN-LAST:event_Texto9MouseClicked
 
     /**
      * @param args the command line arguments

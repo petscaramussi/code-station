@@ -82,6 +82,11 @@ public class Main extends javax.swing.JFrame {
         CodeStation.setForeground(new java.awt.Color(255, 255, 255));
         CodeStation.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         CodeStation.setText("</CodeStation>");
+        CodeStation.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CodeStationMouseClicked(evt);
+            }
+        });
         PanelMain.add(CodeStation, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 810, 280));
 
         JavaScript.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -158,7 +163,7 @@ public class Main extends javax.swing.JFrame {
         PanelFundo.setBackground(new java.awt.Color(255, 255, 255));
 
         Fundo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/wallpaper.png"))); // NOI18N
+        Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/wallpaper2.png"))); // NOI18N
 
         javax.swing.GroupLayout PanelFundoLayout = new javax.swing.GroupLayout(PanelFundo);
         PanelFundo.setLayout(PanelFundoLayout);
@@ -215,6 +220,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_SuperiorMousePressed
 
     private void GitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GitMouseClicked
+        // TODO add your handling code here:
         try {
             // TODO add your handling code here:
             URI u = new URI("https://github.com/dalacorte");
@@ -235,6 +241,17 @@ public class Main extends javax.swing.JFrame {
         a.show();
         this.hide();
     }//GEN-LAST:event_AjudaMouseClicked
+
+    private void CodeStationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CodeStationMouseClicked
+        // TODO add your handling code here:
+                try {
+            // TODO add your handling code here:
+            URI u = new URI("https://codestation.cf");
+            java.awt.Desktop.getDesktop().browse(u);
+        } catch (Exception ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_CodeStationMouseClicked
 
 /**
  * @param args the command line arguments
