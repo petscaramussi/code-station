@@ -7,9 +7,9 @@ package codestation;
 
 import java.net.URI;
 import java.net.URL;
-import java.util.logging.Level;
+import java.util.logging.Level; 
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; 
 import javinha.Javinha;
 
 /**
@@ -45,6 +45,15 @@ public class ConhecerDev extends javax.swing.JFrame {
         PanelMain = new javax.swing.JPanel();
         Fechar = new javax.swing.JLabel();
         Superior = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(710, 480));
@@ -81,6 +90,42 @@ public class ConhecerDev extends javax.swing.JFrame {
             }
         });
         PanelMain.add(Superior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, -1));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/oie_transparent (5).png"))); // NOI18N
+        PanelMain.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, -1, -1));
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/oie_transparent.png"))); // NOI18N
+        PanelMain.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, -1, -1));
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/oie_transparent (1).png"))); // NOI18N
+        PanelMain.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/oie_transparent (2).png"))); // NOI18N
+        PanelMain.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, -1, -1));
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/oie_transparent (4).png"))); // NOI18N
+        PanelMain.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, -10, -1, -1));
+
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/oie_transparent (3).png"))); // NOI18N
+        PanelMain.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 90, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel7.setText("Victor Dalacorte");
+        PanelMain.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel8.setText("Victor Dalacorte");
+        PanelMain.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel9.setText("Victor Dalacorte");
+        PanelMain.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, -1, -1));
 
         getContentPane().add(PanelMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 480));
         PanelMain.getAccessibleContext().setAccessibleName("");
@@ -157,5 +202,14 @@ public class ConhecerDev extends javax.swing.JFrame {
     private javax.swing.JLabel Fechar;
     private javax.swing.JPanel PanelMain;
     private javax.swing.JLabel Superior;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }

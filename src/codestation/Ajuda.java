@@ -293,7 +293,7 @@ public class Ajuda extends javax.swing.JFrame {
 
     private void Texto8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Texto8MouseClicked
         // TODO add your handling code here:
-        ContatoDev c = new ContatoDev();
+        matheus c = new matheus();
         c.show();
     }//GEN-LAST:event_Texto8MouseClicked
 

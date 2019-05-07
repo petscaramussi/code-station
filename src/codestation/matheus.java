@@ -16,19 +16,19 @@ import javinha.Javinha;
  *
  * @author archwinlinu
  */
-public class ContatoDev extends javax.swing.JFrame {
+public class matheus extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public ContatoDev() {
+    public matheus() {
         setUndecorated(true);
         initComponents();
         setSize(410, 290);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        setDefaultCloseOperation(ContatoDev.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(matheus.EXIT_ON_CLOSE);
     }
 
     int xx, xy;
@@ -109,19 +109,19 @@ public class ContatoDev extends javax.swing.JFrame {
         Texto9.setBackground(new java.awt.Color(111, 197, 216));
         Texto9.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto9.setText("peterson.scaramussi@etec.sp.gov.br");
+        Texto9.setText("peterson.silva55@etec.sp.gov.br");
         PanelMain.add(Texto9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 390, -1));
 
         Texto10.setBackground(new java.awt.Color(111, 197, 216));
         Texto10.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto10.setText("guilherme@email.com");
+        Texto10.setText("guisantosfernandes14@gmail.com");
         PanelMain.add(Texto10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 390, -1));
 
         Texto11.setBackground(new java.awt.Color(111, 197, 216));
         Texto11.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto11.setText("caio@email.com");
+        Texto11.setText("caiocalado2009@gmail.com");
         PanelMain.add(Texto11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 390, -1));
 
         getContentPane().add(PanelMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 410, 290));
@@ -169,21 +169,29 @@ public class ContatoDev extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ContatoDev.class
+            java.util.logging.Logger.getLogger(matheus.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ContatoDev.class
+            java.util.logging.Logger.getLogger(matheus.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ContatoDev.class
+            java.util.logging.Logger.getLogger(matheus.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ContatoDev.class
+            java.util.logging.Logger.getLogger(matheus.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -195,7 +203,7 @@ public class ContatoDev extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new ContatoDev().setVisible(true);
+            new matheus().setVisible(true);
         });
     }
 
