@@ -5,6 +5,9 @@
  */
 package codestation;
 
+import codestation.desenvolvedores.ConhecendoDevs;
+import codestation.desenvolvedores.ContatoDev;
+import codestation.desenvolvedores.VictorDev;
 import java.net.URI;
 import java.net.URL;
 import java.util.logging.Level;
@@ -293,13 +296,13 @@ public class Ajuda extends javax.swing.JFrame {
 
     private void Texto8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Texto8MouseClicked
         // TODO add your handling code here:
-        matheus c = new matheus();
+        ContatoDev c = new ContatoDev();
         c.show();
     }//GEN-LAST:event_Texto8MouseClicked
 
     private void Texto9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Texto9MouseClicked
         // TODO add your handling code here:
-        ConhecerDev c = new ConhecerDev();
+        ConhecendoDevs c = new ConhecendoDevs();
         c.show();
     }//GEN-LAST:event_Texto9MouseClicked
 

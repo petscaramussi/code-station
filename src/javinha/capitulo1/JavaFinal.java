@@ -123,12 +123,12 @@ public class JavaFinal extends javax.swing.JFrame {
             PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelTextoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, 790, Short.MAX_VALUE)
+                .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, 786, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PanelTextoLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(Texto2, javax.swing.GroupLayout.DEFAULT_SIZE, 790, Short.MAX_VALUE)
+                    .addComponent(Texto2, javax.swing.GroupLayout.DEFAULT_SIZE, 786, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         PanelTextoLayout.setVerticalGroup(
@@ -136,12 +136,12 @@ public class JavaFinal extends javax.swing.JFrame {
             .addGroup(PanelTextoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(421, 421, 421))
+                .addGap(1132, 1132, 1132))
             .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PanelTextoLayout.createSequentialGroup()
                     .addGap(155, 155, 155)
                     .addComponent(Texto2)
-                    .addContainerGap(380, Short.MAX_VALUE)))
+                    .addContainerGap(1092, Short.MAX_VALUE)))
         );
 
         PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 810, 560));

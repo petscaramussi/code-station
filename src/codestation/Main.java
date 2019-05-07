@@ -223,7 +223,7 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             // TODO add your handling code here:
-            URI u = new URI("https://github.com/dalacorte");
+            URI u = new URI("https://github.com/Dalacorte/code-station");
             java.awt.Desktop.getDesktop().browse(u);
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
