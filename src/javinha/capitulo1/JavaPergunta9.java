@@ -7,7 +7,6 @@ package javinha.capitulo1;
  */
 
 
-import codestation.Main;
 import javax.swing.JOptionPane;
 
 /**

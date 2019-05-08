@@ -29,6 +29,8 @@ public class Codestation {
         // termina tela de contato dev
         // termina tela de conhecer dev
         // termina tela de outros
+        
+        // nome das variaveis dentro de desenvolvedores
     }
     
 }

@@ -8,7 +8,6 @@ package javinha.capitulo2;
 
 
 import javax.swing.JOptionPane;
-import javinha.capitulo1.*;
 import javinha.Javinha;
 
 /**

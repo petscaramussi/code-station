@@ -6,7 +6,6 @@ package javinha.capitulo2;
  * and open the template in the editor.
  */
 import javinha.capitulo1.*;
-import codestation.Main;
 import javax.swing.JOptionPane;
 
 /**

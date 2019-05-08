@@ -6,8 +6,6 @@ package javinha.capitulo2;
  * and open the template in the editor.
  */
 import javinha.capitulo1.*;
-import codestation.Main;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -396,8 +394,6 @@ public class JavaChecklist2 extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(JavaChecklist2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

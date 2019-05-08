@@ -5,13 +5,6 @@
  */
 package codestation.desenvolvedores;
 
-import java.net.URI;
-import java.net.URL;
-import java.util.logging.Level; 
-import java.util.logging.Logger;
-import javax.swing.JOptionPane; 
-import javinha.Javinha;
-
 /**
  *
  * @author archwinlinu
@@ -98,7 +91,7 @@ public class PetersonDev extends javax.swing.JFrame {
         PanelMain.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 710, -1));
 
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/victor.png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/peterson.png"))); // NOI18N
         PanelMain.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 710, 160));
 
         jLabel8.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
@@ -201,20 +194,6 @@ public class PetersonDev extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(PetersonDev.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

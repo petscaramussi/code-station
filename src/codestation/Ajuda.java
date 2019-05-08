@@ -7,13 +7,9 @@ package codestation;
 
 import codestation.desenvolvedores.ConhecendoDevs;
 import codestation.desenvolvedores.ContatoDev;
-import codestation.desenvolvedores.VictorDev;
 import java.net.URI;
-import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
-import javinha.Javinha;
 
 /**
  *
@@ -29,7 +25,6 @@ public class Ajuda extends javax.swing.JFrame {
         initComponents();
         setSize(810, 580);
         setLocationRelativeTo(null);
-        setTitle("Inicio");
         setResizable(false);
         setDefaultCloseOperation(Ajuda.EXIT_ON_CLOSE);
     }
@@ -175,6 +170,11 @@ public class Ajuda extends javax.swing.JFrame {
         Texto1.setForeground(new java.awt.Color(111, 197, 216));
         Texto1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto1.setText("Outros");
+        Texto1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Texto1MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -305,6 +305,13 @@ public class Ajuda extends javax.swing.JFrame {
         ConhecendoDevs c = new ConhecendoDevs();
         c.show();
     }//GEN-LAST:event_Texto9MouseClicked
+
+    private void Texto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Texto1MouseClicked
+        // TODO add your handling code here:
+        Outros o = new Outros();
+        o.show();
+        this.hide();
+    }//GEN-LAST:event_Texto1MouseClicked
 
     /**
      * @param args the command line arguments

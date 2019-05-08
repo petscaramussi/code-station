@@ -6,11 +6,8 @@
 package codestation;
 
 import java.net.URI;
-import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
-import javinha.Javinha;
 
 /**
  *
@@ -26,7 +23,6 @@ public class InformacoesSoftware extends javax.swing.JFrame {
         initComponents();
         setSize(410, 290);
         setLocationRelativeTo(null);
-        setTitle("Inicio");
         setResizable(false);
         setDefaultCloseOperation(InformacoesSoftware.EXIT_ON_CLOSE);
     }
@@ -103,6 +99,11 @@ public class InformacoesSoftware extends javax.swing.JFrame {
         Texto4.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Texto4.setText("https://codestation.cf/documentacao");
+        Texto4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Texto4MouseClicked(evt);
+            }
+        });
         PanelMain.add(Texto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 390, -1));
 
         Texto5.setBackground(new java.awt.Color(111, 197, 216));
@@ -143,6 +144,17 @@ public class InformacoesSoftware extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.hide();
     }//GEN-LAST:event_FecharMouseClicked
+
+    private void Texto4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Texto4MouseClicked
+        // TODO add your handling code here:
+        try {
+            // TODO add your handling code here:
+            URI u = new URI("https://codestation.cf/documentacao");
+            java.awt.Desktop.getDesktop().browse(u);
+        } catch (Exception ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_Texto4MouseClicked
 
     /**
      * @param args the command line arguments

@@ -5,13 +5,6 @@
  */
 package codestation.desenvolvedores;
 
-import java.net.URI;
-import java.net.URL;
-import java.util.logging.Level; 
-import java.util.logging.Logger;
-import javax.swing.JOptionPane; 
-import javinha.Javinha;
-
 /**
  *
  * @author archwinlinu
@@ -55,6 +48,7 @@ public class VictorDev extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(710, 480));
@@ -108,8 +102,8 @@ public class VictorDev extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Falar é fácil. Mostre-me o código.");
-        PanelMain.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 710, 30));
+        jLabel9.setText("victordalacorte@hotmail.com");
+        PanelMain.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 710, 30));
 
         jLabel10.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -140,6 +134,11 @@ public class VictorDev extends javax.swing.JFrame {
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("O Code Station veio a ser um projeto que está sendo trabalhado a quase 1 ano, e mesmo assim, ainda");
         PanelMain.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 710, -1));
+
+        jLabel17.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("Falar é fácil. Mostre-me o código.");
+        PanelMain.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 710, 30));
 
         getContentPane().add(PanelMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 480));
         PanelMain.getAccessibleContext().setAccessibleName("");
@@ -203,13 +202,7 @@ public class VictorDev extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             new VictorDev().setVisible(true);
@@ -227,6 +220,7 @@ public class VictorDev extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

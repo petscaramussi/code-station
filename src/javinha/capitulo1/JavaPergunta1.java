@@ -5,7 +5,7 @@ package javinha.capitulo1;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import codestation.Main;
+
 import javax.swing.JOptionPane;
 
 /**
