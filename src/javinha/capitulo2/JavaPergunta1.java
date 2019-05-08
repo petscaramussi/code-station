@@ -1,12 +1,11 @@
-package javinha.capitulo1;
+package javinha.capitulo2;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
+import javinha.capitulo1.*;
 import codestation.Main;
 import javax.swing.JOptionPane;
 
@@ -14,23 +13,23 @@ import javax.swing.JOptionPane;
  *
  * @author archwinlinu
  */
-public class JavaPergunta5 extends javax.swing.JFrame {
+public class JavaPergunta1 extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public JavaPergunta5() {
+    public JavaPergunta1() {
         setUndecorated(true);
         initComponents();
         setSize(810, 580);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        setDefaultCloseOperation(JavaPergunta5.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JavaPergunta1.EXIT_ON_CLOSE);
     }
-    
-    int xx, xy;
 
+    int xx, xy;
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -171,33 +170,38 @@ public class JavaPergunta5 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("Qual desses NÃO é um operador de comparação");
+        Texto2.setText("alguma pergunta do cap 2");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("<");
+        Button1.setText("alt A");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText(">");
+        Button2.setText("alt B");
+        Button2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button2MouseClicked(evt);
+            }
+        });
 
         Button3.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button3);
         Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText("==");
+        Button3.setText("alt C");
 
         Button4.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button4);
         Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("=>");
+        Button4.setText("alt D");
 
         Button5.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button5);
         Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText("<=");
+        Button5.setText("alt E");
 
         Button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
@@ -279,16 +283,7 @@ public class JavaPergunta5 extends javax.swing.JFrame {
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
         if (Button1.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button2.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button3.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button4.isSelected() == true) {
-            JavaPergunta6 j = new JavaPergunta6();
+            JavaPergunta2 j = new JavaPergunta2();
             int botaoDialogo = JOptionPane.YES_NO_OPTION;
             int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
             if (resultadoDialogo == 0) {
@@ -300,10 +295,23 @@ public class JavaPergunta5 extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Clique em 'Yes' para avançar para próxima questão");
             }
         }
+        if (Button2.isSelected() == true) {
+            JOptionPane.showMessageDialog(null, "Você errou");
+        }
+        if (Button3.isSelected() == true) {
+            JOptionPane.showMessageDialog(null, "Você errou");
+        }
+        if (Button4.isSelected() == true) {
+            JOptionPane.showMessageDialog(null, "Você errou");
+        }
         if (Button5.isSelected() == true) {
             JOptionPane.showMessageDialog(null, "Você errou");
         }
     }//GEN-LAST:event_ButtonMouseClicked
+
+    private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button2MouseClicked
 
     private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
         // TODO add your handling code here:
@@ -326,7 +334,7 @@ public class JavaPergunta5 extends javax.swing.JFrame {
 
     private void Capitulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo2MouseClicked
         // TODO add your handling code here:
-        JavaChecklist j = new JavaChecklist();
+        JavaChecklist2 j = new JavaChecklist2();
         j.show();
         this.hide();
     }//GEN-LAST:event_Capitulo2MouseClicked
@@ -348,19 +356,20 @@ public class JavaPergunta5 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-  
+        //</editor-fold>
+       
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new JavaPergunta5().setVisible(true);
+            new JavaPergunta1().setVisible(true);
         });
     }
 

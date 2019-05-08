@@ -263,7 +263,7 @@ public class JavaCapitulo2 extends javax.swing.JFrame {
         Texto12.setText("classe e um objeto. Examinaremos como os objetos podem melhorar sua vida");
         Texto12.setToolTipText("");
 
-        jButton1.setText("jButton1");
+        jButton1.setText("next");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -359,7 +359,7 @@ public class JavaCapitulo2 extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        JavaChecklist j = new JavaChecklist();
+        JavaChecklist2 j = new JavaChecklist2();
         j.show();
         this.hide();
         
@@ -390,8 +390,8 @@ public class JavaCapitulo2 extends javax.swing.JFrame {
 
     private void Capitulo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo1MouseClicked
         // TODO add your handling code here:
-        JavaCapitulo1 j = new JavaCapitulo1();
-        j.show();
+        JavaChecklist2 j2 = new JavaChecklist2();
+        j2.show();
         this.hide();
     }//GEN-LAST:event_Capitulo1MouseClicked
 
