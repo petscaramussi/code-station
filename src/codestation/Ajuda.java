@@ -10,6 +10,7 @@ import codestation.desenvolvedores.ContatoDev;
 import java.net.URI;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -120,6 +121,7 @@ public class Ajuda extends javax.swing.JFrame {
         Texto5.setForeground(new java.awt.Color(111, 197, 216));
         Texto5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto5.setText("Gostaria de acessar o site do Code Station");
+        Texto5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Texto5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Texto5MouseClicked(evt);
@@ -130,6 +132,7 @@ public class Ajuda extends javax.swing.JFrame {
         Texto6.setForeground(new java.awt.Color(111, 197, 216));
         Texto6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto6.setText("Gostaria de acessar o Git do Code Station");
+        Texto6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Texto6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Texto6MouseClicked(evt);
@@ -140,6 +143,7 @@ public class Ajuda extends javax.swing.JFrame {
         Texto7.setForeground(new java.awt.Color(111, 197, 216));
         Texto7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto7.setText("Gostaria de obter mais informações sobre o software");
+        Texto7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Texto7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Texto7MouseClicked(evt);
@@ -150,6 +154,7 @@ public class Ajuda extends javax.swing.JFrame {
         Texto8.setForeground(new java.awt.Color(111, 197, 216));
         Texto8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto8.setText("Gostaria de entrar em contato com algum dos desenvolvedores");
+        Texto8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Texto8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Texto8MouseClicked(evt);
@@ -160,6 +165,7 @@ public class Ajuda extends javax.swing.JFrame {
         Texto9.setForeground(new java.awt.Color(111, 197, 216));
         Texto9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto9.setText("Gostaria de conhecer os desenvolvedores");
+        Texto9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Texto9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Texto9MouseClicked(evt);
@@ -169,7 +175,9 @@ public class Ajuda extends javax.swing.JFrame {
         Texto1.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto1.setForeground(new java.awt.Color(111, 197, 216));
         Texto1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto1.setText("Outros");
+        Texto1.setText("Outros (Desativado)");
+        Texto1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Texto1.setEnabled(false);
         Texto1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Texto1MouseClicked(evt);
@@ -281,7 +289,7 @@ public class Ajuda extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             // TODO add your handling code here:
-            URI u = new URI("https://github.com/dalacorte");
+            URI u = new URI("https://github.com/dalacorte/code-station");
             java.awt.Desktop.getDesktop().browse(u);
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
@@ -308,9 +316,7 @@ public class Ajuda extends javax.swing.JFrame {
 
     private void Texto1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Texto1MouseClicked
         // TODO add your handling code here:
-        Outros o = new Outros();
-        o.show();
-        this.hide();
+        JOptionPane.showMessageDialog(null, "Função indisponível no momento\nSentimos muito");
     }//GEN-LAST:event_Texto1MouseClicked
 
     /**

@@ -5,7 +5,8 @@ package javinha.capitulo2;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import javinha.capitulo1.*;
+
+
 import javax.swing.JOptionPane;
 
 /**
@@ -137,12 +138,12 @@ public class JavaPergunta1 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(PanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PanelLateralLayout.createSequentialGroup()
+                        .addComponent(Capitulo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(PanelLateralLayout.createSequentialGroup()
                         .addGap(51, 51, 51)
                         .addComponent(Separador2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58))
-                    .addGroup(PanelLateralLayout.createSequentialGroup()
-                        .addComponent(Capitulo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
+                        .addGap(58, 58, 58))))
         );
         PanelLateralLayout.setVerticalGroup(
             PanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -169,38 +170,38 @@ public class JavaPergunta1 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("alguma pergunta do cap 2");
+        Texto2.setText("Todas as instruções terminam em:");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("alt A");
+        Button1.setText("Dois pacotes dentro do seu projeto");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText("alt B");
-        Button2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Button2MouseClicked(evt);
-            }
-        });
+        Button2.setText("Dois códigos diferentes");
 
         Button3.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button3);
         Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText("alt C");
+        Button3.setText("Uma classe abstrata e uma classe normal");
 
         Button4.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button4);
         Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("alt D");
+        Button4.setText("Uma classe com o tipo, e outra com o método main, para teste");
+        Button4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button4ActionPerformed(evt);
+            }
+        });
 
         Button5.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button5);
         Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText("alt E");
+        Button5.setText("Dois projetos dentro do seu NetBeans");
 
         Button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
@@ -269,7 +270,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
 
     private void VoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VoltarMouseClicked
         // TODO add your handling code here:
-        JavaCapitulo1 j = new JavaCapitulo1();
+        JavaCapitulo2 j = new JavaCapitulo2();
         j.show();
         this.hide();
     }//GEN-LAST:event_VoltarMouseClicked
@@ -282,6 +283,15 @@ public class JavaPergunta1 extends javax.swing.JFrame {
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
         if (Button1.isSelected() == true) {
+            JOptionPane.showMessageDialog(null, "Você errou");
+        }
+        if (Button2.isSelected() == true) {
+            JOptionPane.showMessageDialog(null, "Você errou");
+        }
+        if (Button3.isSelected() == true) {
+            JOptionPane.showMessageDialog(null, "Você errou");
+        }
+        if (Button4.isSelected() == true) {
             JavaPergunta2 j = new JavaPergunta2();
             int botaoDialogo = JOptionPane.YES_NO_OPTION;
             int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
@@ -294,23 +304,10 @@ public class JavaPergunta1 extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Clique em 'Yes' para avançar para próxima questão");
             }
         }
-        if (Button2.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button3.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button4.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
         if (Button5.isSelected() == true) {
             JOptionPane.showMessageDialog(null, "Você errou");
         }
     }//GEN-LAST:event_ButtonMouseClicked
-
-    private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button2MouseClicked
 
     private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
         // TODO add your handling code here:
@@ -337,6 +334,10 @@ public class JavaPergunta1 extends javax.swing.JFrame {
         j.show();
         this.hide();
     }//GEN-LAST:event_Capitulo2MouseClicked
+
+    private void Button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -365,7 +366,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-       
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             new JavaPergunta1().setVisible(true);

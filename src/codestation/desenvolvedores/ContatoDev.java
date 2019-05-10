@@ -84,7 +84,7 @@ public class ContatoDev extends javax.swing.JFrame {
         Texto5.setBackground(new java.awt.Color(111, 197, 216));
         Texto5.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto5.setText("baianorfudido@tocomsono.dormi");
+        Texto5.setText("matheus.melier3@gmail.com");
         PanelMain.add(Texto5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 390, -1));
 
         Texto7.setBackground(new java.awt.Color(111, 197, 216));

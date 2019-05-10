@@ -14,15 +14,16 @@ public class Codestation {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
         // TODO code application logic here
         
-        // Ideias para o futuro:
+        // ideias para o futuro:
         
-        // fazer uma tela para o final das perguntas
-        // tela ira parabenizar a pessoa
-        // ira possuir um botao para o menu
-        // talvez possua uma pontuação, nada que uma label fixa nao resolva
+        // fazer uma tela para o final das perguntas:
+        // 1. tela ira parabenizar a pessoa
+        // 2. ira possuir um botao para o menu
+        // 3. talvez possua uma pontuação, nada que uma label fixa nao resolva
         
         // termina tela de ajuda
         // termina tela de informacoes software
