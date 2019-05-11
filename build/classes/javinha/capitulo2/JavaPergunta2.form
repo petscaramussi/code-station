@@ -243,6 +243,10 @@
                                   <Component id="Button1" alignment="1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Texto3" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -255,9 +259,11 @@
                       <Component id="Icon" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Texto1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="Texto2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Texto2" min="-2" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Texto3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                       <Component id="Button1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="Button2" min="-2" max="-2" attributes="0"/>
@@ -269,7 +275,7 @@
                       <Component id="Button5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
                       <Component id="Button" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="85" max="32767" attributes="0"/>
+                      <EmptySpace pref="75" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -302,7 +308,7 @@
                   <Font name="Monospaced" size="14" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="Todas as instru&#xe7;&#xf5;es terminam em:"/>
+                <Property name="text" type="java.lang.String" value="Uma Casa esta para uma planta arquitetonica,"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -317,7 +323,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Dois pacotes dentro do seu projeto"/>
+                <Property name="text" type="java.lang.String" value="Um metodo"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="JavaPergunta1_jRadioButton1"/>
@@ -334,7 +340,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Dois c&#xf3;digos diferentes"/>
+                <Property name="text" type="java.lang.String" value="Uma classe"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="Button3">
@@ -348,7 +354,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Uma classe abstrata e uma classe normal"/>
+                <Property name="text" type="java.lang.String" value="Uma propriedade"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="Button4">
@@ -362,7 +368,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Uma classe com o tipo, e outra com o m&#xe9;todo main, para teste"/>
+                <Property name="text" type="java.lang.String" value="Um atributo"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button4ActionPerformed"/>
@@ -379,7 +385,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Dois projetos dentro do seu NetBeans"/>
+                <Property name="text" type="java.lang.String" value="Uma variavel"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="Button">
@@ -392,6 +398,16 @@
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ButtonMouseClicked"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Texto3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Monospaced" size="14" style="0"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="assim como um objeto esta para um(a):"/>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>

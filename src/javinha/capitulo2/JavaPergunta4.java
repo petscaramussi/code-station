@@ -13,19 +13,19 @@ import javax.swing.JOptionPane;
  *
  * @author archwinlinu
  */
-public class JavaPergunta1 extends javax.swing.JFrame {
+public class JavaPergunta4 extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public JavaPergunta1() {
+    public JavaPergunta4() {
         setUndecorated(true);
         initComponents();
         setSize(810, 580);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        setDefaultCloseOperation(JavaPergunta1.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JavaPergunta4.EXIT_ON_CLOSE);
     }
 
     int xx, xy;
@@ -170,28 +170,33 @@ public class JavaPergunta1 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("Todas as instruções terminam em:");
+        Texto2.setText("Quais são os três pilares da Programação Orientada a Objetos?");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("Dois pacotes dentro do seu projeto");
+        Button1.setText("herança, polimorfismo e instancia");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText("Dois códigos diferentes");
+        Button2.setText("herança, polimorfismo e metodologia");
 
         Button3.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button3);
         Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText("Uma classe abstrata e uma classe normal");
+        Button3.setText("encapsulamento, herança e polimorfismo");
+        Button3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button3ActionPerformed(evt);
+            }
+        });
 
         Button4.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button4);
         Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("Uma classe com o tipo, e outra com o método main, para teste");
+        Button4.setText("metodologia, herança e encapsulamento");
         Button4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button4ActionPerformed(evt);
@@ -201,7 +206,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
         Button5.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button5);
         Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText("Dois projetos dentro do seu NetBeans");
+        Button5.setText("encapsulamento, polimorfismo e metodologia");
 
         Button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
@@ -241,9 +246,9 @@ public class JavaPergunta1 extends javax.swing.JFrame {
                 .addComponent(Icon)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Texto2)
                 .addGap(18, 18, 18)
+                .addComponent(Texto2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21)
                 .addComponent(Button1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Button2)
@@ -255,7 +260,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
                 .addComponent(Button5)
                 .addGap(79, 79, 79)
                 .addComponent(Button)
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 540, 560));
@@ -283,7 +288,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
         Resultado r = new Resultado();
-        r.Alternativas(2,Button4.isSelected(),Button1.isSelected(),Button2.isSelected(),Button3.isSelected(),Button5.isSelected());
+        r.Alternativas(5,Button3.isSelected(),Button1.isSelected(),Button2.isSelected(),Button4.isSelected(),Button5.isSelected());
         if(r.isStatus() == true){
         this.hide();
         }
@@ -319,6 +324,10 @@ public class JavaPergunta1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Button4ActionPerformed
 
+    private void Button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -336,20 +345,22 @@ public class JavaPergunta1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new JavaPergunta1().setVisible(true);
+            new JavaPergunta4().setVisible(true);
         });
     }
 

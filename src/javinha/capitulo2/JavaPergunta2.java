@@ -58,6 +58,7 @@ public class JavaPergunta2 extends javax.swing.JFrame {
         Button4 = new javax.swing.JRadioButton();
         Button5 = new javax.swing.JRadioButton();
         Button = new javax.swing.JLabel();
+        Texto3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(810, 580));
@@ -170,28 +171,28 @@ public class JavaPergunta2 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("Todas as instruções terminam em:");
+        Texto2.setText("Uma Casa esta para uma planta arquitetonica,");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("Dois pacotes dentro do seu projeto");
+        Button1.setText("Um metodo");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText("Dois códigos diferentes");
+        Button2.setText("Uma classe");
 
         Button3.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button3);
         Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText("Uma classe abstrata e uma classe normal");
+        Button3.setText("Uma propriedade");
 
         Button4.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button4);
         Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("Uma classe com o tipo, e outra com o método main, para teste");
+        Button4.setText("Um atributo");
         Button4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button4ActionPerformed(evt);
@@ -201,7 +202,7 @@ public class JavaPergunta2 extends javax.swing.JFrame {
         Button5.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button5);
         Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText("Dois projetos dentro do seu NetBeans");
+        Button5.setText("Uma variavel");
 
         Button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
@@ -210,6 +211,11 @@ public class JavaPergunta2 extends javax.swing.JFrame {
                 ButtonMouseClicked(evt);
             }
         });
+
+        Texto3.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        Texto3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Texto3.setText("assim como um objeto esta para um(a):");
+        Texto3.setToolTipText("");
 
         javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
         PanelTexto.setLayout(PanelTextoLayout);
@@ -231,7 +237,10 @@ public class JavaPergunta2 extends javax.swing.JFrame {
                             .addComponent(Button4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
                             .addComponent(Button3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(Button1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(PanelTextoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Texto3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         PanelTextoLayout.setVerticalGroup(
@@ -241,9 +250,11 @@ public class JavaPergunta2 extends javax.swing.JFrame {
                 .addComponent(Icon)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Texto2)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Texto2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Texto3)
+                .addGap(7, 7, 7)
                 .addComponent(Button1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Button2)
@@ -255,7 +266,7 @@ public class JavaPergunta2 extends javax.swing.JFrame {
                 .addComponent(Button5)
                 .addGap(79, 79, 79)
                 .addComponent(Button)
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 540, 560));
@@ -282,30 +293,10 @@ public class JavaPergunta2 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        if (Button1.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button2.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button3.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button4.isSelected() == true) {
-            JavaPergunta2 j = new JavaPergunta2();
-            int botaoDialogo = JOptionPane.YES_NO_OPTION;
-            int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
-            if (resultadoDialogo == 0) {
-                System.out.println("Yes option");
-                j.show();
-                this.hide();
-            } else {
-                System.out.println("No Option");
-                JOptionPane.showMessageDialog(this, "Clique em 'Yes' para avançar para próxima questão");
-            }
-        }
-        if (Button5.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
+        Resultado r = new Resultado();
+        r.Alternativas(3,Button2.isSelected(),Button1.isSelected(),Button3.isSelected(),Button4.isSelected(),Button5.isSelected());
+        if(r.isStatus() == true){
+        this.hide();
         }
     }//GEN-LAST:event_ButtonMouseClicked
 
@@ -391,6 +382,7 @@ public class JavaPergunta2 extends javax.swing.JFrame {
     private javax.swing.JLabel Superior;
     private javax.swing.JLabel Texto1;
     private javax.swing.JLabel Texto2;
+    private javax.swing.JLabel Texto3;
     private javax.swing.JLabel Voltar;
     private javax.swing.ButtonGroup buttonGroup1;
     // End of variables declaration//GEN-END:variables
