@@ -176,17 +176,17 @@ public class JavaPergunta4 extends javax.swing.JFrame {
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("herança, polimorfismo e instancia");
+        Button1.setText("Herança, polimorfismo e instancia");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText("herança, polimorfismo e metodologia");
+        Button2.setText("Herança, polimorfismo e metodologia");
 
         Button3.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button3);
         Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText("encapsulamento, herança e polimorfismo");
+        Button3.setText("Encapsulamento, herança e polimorfismo");
         Button3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button3ActionPerformed(evt);
@@ -196,7 +196,7 @@ public class JavaPergunta4 extends javax.swing.JFrame {
         Button4.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button4);
         Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("metodologia, herança e encapsulamento");
+        Button4.setText("Metodologia, herança e encapsulamento");
         Button4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button4ActionPerformed(evt);
@@ -206,7 +206,7 @@ public class JavaPergunta4 extends javax.swing.JFrame {
         Button5.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button5);
         Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText("encapsulamento, polimorfismo e metodologia");
+        Button5.setText("Encapsulamento, polimorfismo e metodologia");
 
         Button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
@@ -227,16 +227,15 @@ public class JavaPergunta4 extends javax.swing.JFrame {
                         .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(Icon, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Texto1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Texto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(Texto2, javax.swing.GroupLayout.DEFAULT_SIZE, 516, Short.MAX_VALUE)))
                     .addGroup(PanelTextoLayout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Button, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
-                            .addComponent(Button3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Button5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 528, Short.MAX_VALUE)
+                    .addComponent(Button3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         PanelTextoLayout.setVerticalGroup(
@@ -248,7 +247,7 @@ public class JavaPergunta4 extends javax.swing.JFrame {
                 .addComponent(Texto1)
                 .addGap(18, 18, 18)
                 .addComponent(Texto2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Button1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Button2)
@@ -258,9 +257,9 @@ public class JavaPergunta4 extends javax.swing.JFrame {
                 .addComponent(Button4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Button5)
-                .addGap(79, 79, 79)
+                .addGap(92, 92, 92)
                 .addComponent(Button)
-                .addContainerGap(75, Short.MAX_VALUE))
+                .addContainerGap(70, Short.MAX_VALUE))
         );
 
         PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 540, 560));
