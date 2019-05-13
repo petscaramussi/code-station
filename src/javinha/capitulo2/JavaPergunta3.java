@@ -305,10 +305,22 @@ public class JavaPergunta3 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        Resultado r = new Resultado();
-        r.Alternativas(4, Button1.isSelected(),Button2.isSelected() ,Button2.isSelected() ,Button4.isSelected(),Button5.isSelected());
-        if(r.isStatus() == true){
-            this.hide();
+        boolean r = Button4.isSelected();
+
+        if (r == true) {
+            JavaPergunta4 j = new JavaPergunta4();
+            int botaoDialogo = JOptionPane.YES_NO_OPTION;
+            int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
+            if (resultadoDialogo == 0) {
+                System.out.println("Yes option");
+                j.show();
+                this.hide();
+            } else {
+                System.out.println("No Option");
+                JOptionPane.showMessageDialog(this, "Clique em 'Yes' para avançar para próxima questão");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Você errou");
         }
     }//GEN-LAST:event_ButtonMouseClicked
 

@@ -5,8 +5,6 @@ package javinha.capitulo2;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 import javax.swing.JOptionPane;
 
 /**
@@ -29,7 +27,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
     }
 
     int xx, xy;
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -282,10 +280,22 @@ public class JavaPergunta1 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        Resultado r = new Resultado();
-        r.Alternativas(2,Button4.isSelected(),Button1.isSelected(),Button2.isSelected(),Button3.isSelected(),Button5.isSelected());
-        if(r.isStatus() == true){
-        this.hide();
+        boolean r = Button4.isSelected();
+
+        if (r == true) {
+            JavaPergunta2 j = new JavaPergunta2();
+            int botaoDialogo = JOptionPane.YES_NO_OPTION;
+            int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
+            if (resultadoDialogo == 0) {
+                System.out.println("Yes option");
+                j.show();
+                this.hide();
+            } else {
+                System.out.println("No Option");
+                JOptionPane.showMessageDialog(this, "Clique em 'Yes' para avançar para próxima questão");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Você errou");
         }
     }//GEN-LAST:event_ButtonMouseClicked
 
@@ -304,8 +314,8 @@ public class JavaPergunta1 extends javax.swing.JFrame {
         // TODO add your handling code here:
         int x = evt.getXOnScreen();
         int y = evt.getYOnScreen();
-        
-        this.setLocation(x-xx, y-xy);
+
+        this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_SuperiorMouseDragged
 
     private void Capitulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo2MouseClicked
