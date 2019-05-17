@@ -5,6 +5,7 @@
  */
 package codestation;
 
+import java.awt.Toolkit;
 import java.net.URI;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,6 +21,7 @@ public class Main extends javax.swing.JFrame {
     /**
      * Creates new form Menu
      */
+    
     public Main() {
         setUndecorated(true);
         initComponents();
@@ -292,7 +294,7 @@ public class Main extends javax.swing.JFrame {
             new Main().setVisible(true);
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Ajuda;
     private javax.swing.JLabel Amarelo;
@@ -309,3 +311,5 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel Superior;
     // End of variables declaration//GEN-END:variables
 }
+
+

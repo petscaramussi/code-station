@@ -5,31 +5,29 @@ package javinha.capitulo2;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
-import javax.swing.JOptionPane;
+import javinha.capitulo1.*;
 
 /**
  *
  * @author archwinlinu
  */
-public class JavaPergunta5 extends javax.swing.JFrame {
+public class JavaChecklist extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public JavaPergunta5() {
+    public JavaChecklist() {
         setUndecorated(true);
         initComponents();
         setSize(810, 580);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        setDefaultCloseOperation(JavaPergunta5.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JavaChecklist.EXIT_ON_CLOSE);
     }
 
     int xx, xy;
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -45,20 +43,20 @@ public class JavaPergunta5 extends javax.swing.JFrame {
         Voltar = new javax.swing.JLabel();
         Fechar = new javax.swing.JLabel();
         Superior = new javax.swing.JLabel();
-        PanelLateral = new javax.swing.JPanel();
-        Separador2 = new javax.swing.JSeparator();
-        Capitulo2 = new javax.swing.JLabel();
         PanelTexto = new javax.swing.JPanel();
         Icon = new javax.swing.JLabel();
         Texto1 = new javax.swing.JLabel();
-        Texto2 = new javax.swing.JLabel();
         Button1 = new javax.swing.JRadioButton();
         Button2 = new javax.swing.JRadioButton();
         Button3 = new javax.swing.JRadioButton();
         Button4 = new javax.swing.JRadioButton();
         Button5 = new javax.swing.JRadioButton();
+        Button6 = new javax.swing.JRadioButton();
+        Button7 = new javax.swing.JRadioButton();
+        Button8 = new javax.swing.JRadioButton();
+        Button9 = new javax.swing.JRadioButton();
+        Button10 = new javax.swing.JRadioButton();
         Button = new javax.swing.JLabel();
-        Texto3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(810, 580));
@@ -118,46 +116,6 @@ public class JavaPergunta5 extends javax.swing.JFrame {
         });
         PanelMain.add(Superior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        PanelLateral.setBackground(new java.awt.Color(255, 255, 255));
-        PanelLateral.setForeground(new java.awt.Color(240, 240, 240));
-
-        Capitulo2.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        Capitulo2.setForeground(new java.awt.Color(248, 152, 29));
-        Capitulo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Capitulo2.setText("Checklist");
-        Capitulo2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Capitulo2MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout PanelLateralLayout = new javax.swing.GroupLayout(PanelLateral);
-        PanelLateral.setLayout(PanelLateralLayout);
-        PanelLateralLayout.setHorizontalGroup(
-            PanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelLateralLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(PanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelLateralLayout.createSequentialGroup()
-                        .addComponent(Capitulo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(PanelLateralLayout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addComponent(Separador2, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58))))
-        );
-        PanelLateralLayout.setVerticalGroup(
-            PanelLateralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelLateralLayout.createSequentialGroup()
-                .addGap(245, 245, 245)
-                .addComponent(Capitulo2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Separador2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(274, Short.MAX_VALUE))
-        );
-
-        PanelMain.add(PanelLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 270, 560));
-
         PanelTexto.setBackground(new java.awt.Color(255, 255, 255));
 
         Icon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -166,63 +124,73 @@ public class JavaPergunta5 extends javax.swing.JFrame {
         Texto1.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Texto1.setForeground(new java.awt.Color(248, 152, 29));
         Texto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto1.setText("Pergunta:");
+        Texto1.setText("Checklist");
         Texto1.setToolTipText("");
-
-        Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("A maioria das linguagens orientadas a objeto");
-        Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("Secreto, público e primário");
-        Button1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button1ActionPerformed(evt);
+        Button1.setText("Pergunta 1");
+        Button1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button1MouseClicked(evt);
             }
         });
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText("público, protegido e privado ");
-        Button2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button2ActionPerformed(evt);
-            }
-        });
+        Button2.setText("Pergunta 2");
 
         Button3.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button3);
         Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText("público, privatizado e secundario");
-        Button3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button3ActionPerformed(evt);
-            }
-        });
+        Button3.setText("Pergunta 3");
 
         Button4.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button4);
         Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("público, protgido e primário");
-        Button4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button4ActionPerformed(evt);
-            }
-        });
+        Button4.setText("Pergunta 4");
 
         Button5.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button5);
         Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText("público, privado e secundario");
-        Button5.addActionListener(new java.awt.event.ActionListener() {
+        Button5.setText("Pergunta 5");
+
+        Button6.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button6);
+        Button6.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button6.setText("Pergunta 6");
+
+        Button7.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button7);
+        Button7.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button7.setText("Pergunta 7");
+        Button7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button5ActionPerformed(evt);
+                Button7ActionPerformed(evt);
             }
         });
+
+        Button8.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button8);
+        Button8.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button8.setText("Pergunta 8");
+        Button8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button8ActionPerformed(evt);
+            }
+        });
+
+        Button9.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button9);
+        Button9.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button9.setText("Pergunta 9");
+
+        Button10.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button10);
+        Button10.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button10.setText("Pergunta 10");
 
         Button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
@@ -231,11 +199,6 @@ public class JavaPergunta5 extends javax.swing.JFrame {
                 ButtonMouseClicked(evt);
             }
         });
-
-        Texto3.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        Texto3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto3.setText("suporta quais niveis de acesso?");
-        Texto3.setToolTipText("");
 
         javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
         PanelTexto.setLayout(PanelTextoLayout);
@@ -247,29 +210,24 @@ public class JavaPergunta5 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(Icon, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Texto1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Texto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
+                            .addComponent(Texto1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 790, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelTextoLayout.createSequentialGroup()
+                        .addContainerGap()
                         .addComponent(Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Texto3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button5, javax.swing.GroupLayout.DEFAULT_SIZE, 524, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button3, javax.swing.GroupLayout.DEFAULT_SIZE, 524, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(21, 21, 21)
+                        .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(Button9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button10, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         PanelTextoLayout.setVerticalGroup(
@@ -279,11 +237,7 @@ public class JavaPergunta5 extends javax.swing.JFrame {
                 .addComponent(Icon)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Texto2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Texto3)
-                .addGap(47, 47, 47)
+                .addGap(49, 49, 49)
                 .addComponent(Button1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Button2)
@@ -293,12 +247,22 @@ public class JavaPergunta5 extends javax.swing.JFrame {
                 .addComponent(Button4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Button5)
-                .addGap(51, 51, 51)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Button6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Button7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Button8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Button9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Button10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(Button)
-                .addContainerGap(75, Short.MAX_VALUE))
+                .addGap(24, 24, 24))
         );
 
-        PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 540, 560));
+        PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 810, 560));
 
         getContentPane().add(PanelMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 580));
         PanelMain.getAccessibleContext().setAccessibleName("");
@@ -322,22 +286,55 @@ public class JavaPergunta5 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        boolean r = Button3.isSelected();
-
-        if (r == true) {
+        if (Button1.isSelected() == true) {
+            JavaPergunta1 j = new JavaPergunta1();
+            j.show();
+            this.hide();
+        }
+        if (Button2.isSelected() == true) {
+            JavaPergunta2 j = new JavaPergunta2();
+            j.show();
+            this.hide();
+        }
+        if (Button3.isSelected() == true) {
             JavaPergunta3 j = new JavaPergunta3();
-            int botaoDialogo = JOptionPane.YES_NO_OPTION;
-            int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
-            if (resultadoDialogo == 0) {
-                System.out.println("Yes option");
-                j.show();
-                this.hide();
-            } else {
-                System.out.println("No Option");
-                JOptionPane.showMessageDialog(this, "Clique em 'Yes' para avançar para próxima questão");
-            }
-        } else {
-            JOptionPane.showMessageDialog(null, "Você errou");
+            j.show();
+            this.hide();
+        }
+        if (Button4.isSelected() == true) {
+            JavaPergunta4 j = new JavaPergunta4();
+            j.show();
+            this.hide();
+        }
+        if (Button5.isSelected() == true) {
+            JavaPergunta5 j = new JavaPergunta5();
+            j.show();
+            this.hide();
+        }
+        if (Button6.isSelected() == true) {
+            JavaPergunta6 j = new JavaPergunta6();
+            j.show();
+            this.hide();
+        }
+        if (Button7.isSelected() == true) {
+            JavaPergunta7 j = new JavaPergunta7();
+            j.show();
+            this.hide();
+        }
+        if (Button8.isSelected() == true) {
+            JavaPergunta8 j = new JavaPergunta8();
+            j.show();
+            this.hide();
+        }
+        if (Button9.isSelected() == true) {
+            JavaPergunta9 j = new JavaPergunta9();
+            j.show();
+            this.hide();
+        }
+        if (Button10.isSelected() == true) {
+            JavaPergunta10 j = new JavaPergunta10();
+            j.show();
+            this.hide();
         }
     }//GEN-LAST:event_ButtonMouseClicked
 
@@ -356,36 +353,21 @@ public class JavaPergunta5 extends javax.swing.JFrame {
         // TODO add your handling code here:
         int x = evt.getXOnScreen();
         int y = evt.getYOnScreen();
-        
-        this.setLocation(x-xx, y-xy);
+
+        this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_SuperiorMouseDragged
 
-    private void Capitulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo2MouseClicked
+    private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
         // TODO add your handling code here:
-        JavaChecklist j = new JavaChecklist();
-        j.show();
-        this.hide();
-    }//GEN-LAST:event_Capitulo2MouseClicked
+    }//GEN-LAST:event_Button1MouseClicked
 
-    private void Button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button4ActionPerformed
+    private void Button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button7ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Button4ActionPerformed
+    }//GEN-LAST:event_Button7ActionPerformed
 
-    private void Button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button1ActionPerformed
+    private void Button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Button1ActionPerformed
-
-    private void Button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button2ActionPerformed
-
-    private void Button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button5ActionPerformed
-
-    private void Button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button3ActionPerformed
+    }//GEN-LAST:event_Button8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -404,18 +386,14 @@ public class JavaPergunta5 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaChecklist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaChecklist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaChecklist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta5.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaChecklist.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -423,29 +401,29 @@ public class JavaPergunta5 extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new JavaPergunta5().setVisible(true);
+            new JavaChecklist().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Button;
     private javax.swing.JRadioButton Button1;
+    private javax.swing.JRadioButton Button10;
     private javax.swing.JRadioButton Button2;
     private javax.swing.JRadioButton Button3;
     private javax.swing.JRadioButton Button4;
     private javax.swing.JRadioButton Button5;
-    private javax.swing.JLabel Capitulo2;
+    private javax.swing.JRadioButton Button6;
+    private javax.swing.JRadioButton Button7;
+    private javax.swing.JRadioButton Button8;
+    private javax.swing.JRadioButton Button9;
     private javax.swing.JLabel Fechar;
     private javax.swing.JLabel Icon;
     private javax.swing.JLabel Minimizar;
-    private javax.swing.JPanel PanelLateral;
     private javax.swing.JPanel PanelMain;
     private javax.swing.JPanel PanelTexto;
-    private javax.swing.JSeparator Separador2;
     private javax.swing.JLabel Superior;
     private javax.swing.JLabel Texto1;
-    private javax.swing.JLabel Texto2;
-    private javax.swing.JLabel Texto3;
     private javax.swing.JLabel Voltar;
     private javax.swing.ButtonGroup buttonGroup1;
     // End of variables declaration//GEN-END:variables
