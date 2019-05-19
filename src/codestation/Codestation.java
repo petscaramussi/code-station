@@ -33,9 +33,6 @@ public class Codestation {
         
         // nome das variaveis dentro de desenvolvedores
         
-        // https://www.youtube.com/watch?v=zA82Mp5BXC4
-        // https://www.youtube.com/watch?v=r2eOwH9vjKs
-        
         // https://www.youtube.com/watch?v=lDzKX3djE-M
         // https://www.youtube.com/watch?v=VerqbgKmkM0
         
