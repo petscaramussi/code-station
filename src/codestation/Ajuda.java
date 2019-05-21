@@ -117,7 +117,7 @@ public class Ajuda extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        Texto5.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        Texto5.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
         Texto5.setForeground(new java.awt.Color(111, 197, 216));
         Texto5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto5.setText("Gostaria de acessar o site do Code Station");
@@ -128,7 +128,7 @@ public class Ajuda extends javax.swing.JFrame {
             }
         });
 
-        Texto6.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        Texto6.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
         Texto6.setForeground(new java.awt.Color(111, 197, 216));
         Texto6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto6.setText("Gostaria de acessar o Git do Code Station");
@@ -139,7 +139,7 @@ public class Ajuda extends javax.swing.JFrame {
             }
         });
 
-        Texto7.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        Texto7.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
         Texto7.setForeground(new java.awt.Color(111, 197, 216));
         Texto7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto7.setText("Gostaria de obter mais informações sobre o software");
@@ -150,10 +150,10 @@ public class Ajuda extends javax.swing.JFrame {
             }
         });
 
-        Texto8.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        Texto8.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
         Texto8.setForeground(new java.awt.Color(111, 197, 216));
         Texto8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto8.setText("Gostaria de entrar em contato com algum dos desenvolvedores");
+        Texto8.setText("Gostaria de entrar em contato com os desenvolvedores");
         Texto8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Texto8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -161,7 +161,7 @@ public class Ajuda extends javax.swing.JFrame {
             }
         });
 
-        Texto9.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        Texto9.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
         Texto9.setForeground(new java.awt.Color(111, 197, 216));
         Texto9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto9.setText("Gostaria de conhecer os desenvolvedores");
@@ -194,7 +194,7 @@ public class Ajuda extends javax.swing.JFrame {
                     .addComponent(Texto5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Texto6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Texto7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Texto8, javax.swing.GroupLayout.DEFAULT_SIZE, 550, Short.MAX_VALUE)
+                    .addComponent(Texto8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Texto9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Texto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -214,7 +214,7 @@ public class Ajuda extends javax.swing.JFrame {
                 .addComponent(Texto9)
                 .addGap(18, 18, 18)
                 .addComponent(Texto1)
-                .addContainerGap(89, Short.MAX_VALUE))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         PanelMain.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, 570, 310));

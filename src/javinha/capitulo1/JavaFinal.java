@@ -44,7 +44,12 @@ public class JavaFinal extends javax.swing.JFrame {
         Superior = new javax.swing.JLabel();
         PanelTexto = new javax.swing.JPanel();
         Icon = new javax.swing.JLabel();
-        Texto2 = new javax.swing.JLabel();
+        Texto3 = new javax.swing.JLabel();
+        Texto4 = new javax.swing.JLabel();
+        Texto5 = new javax.swing.JLabel();
+        Texto6 = new javax.swing.JLabel();
+        Texto7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(810, 580));
@@ -105,42 +110,46 @@ public class JavaFinal extends javax.swing.JFrame {
         PanelMain.add(Superior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         PanelTexto.setBackground(new java.awt.Color(255, 255, 255));
+        PanelTexto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Icon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/java2.png"))); // NOI18N
+        PanelTexto.add(Icon, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 11, 810, 270));
 
-        Texto2.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
-        Texto2.setForeground(new java.awt.Color(248, 152, 29));
-        Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("Parabéns por chegar ao final!");
-        Texto2.setToolTipText("");
+        Texto3.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        Texto3.setForeground(new java.awt.Color(248, 152, 29));
+        Texto3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Texto3.setText("<Parabéns por chegar ao final>");
+        Texto3.setToolTipText("");
+        PanelTexto.add(Texto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 790, -1));
 
-        javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
-        PanelTexto.setLayout(PanelTextoLayout);
-        PanelTextoLayout.setHorizontalGroup(
-            PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelTextoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, 786, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(PanelTextoLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(Texto2, javax.swing.GroupLayout.DEFAULT_SIZE, 786, Short.MAX_VALUE)
-                    .addContainerGap()))
-        );
-        PanelTextoLayout.setVerticalGroup(
-            PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelTextoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(1132, 1132, 1132))
-            .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(PanelTextoLayout.createSequentialGroup()
-                    .addGap(155, 155, 155)
-                    .addComponent(Texto2)
-                    .addContainerGap(1092, Short.MAX_VALUE)))
-        );
+        Texto4.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        Texto4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Texto4.setText("Você concluiu todos os exercícios do capítulo 1");
+        Texto4.setToolTipText("");
+        PanelTexto.add(Texto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 790, -1));
+
+        Texto5.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        Texto5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Texto5.setText("esperamos que você saia daqui mais inteligente");
+        Texto5.setToolTipText("");
+        PanelTexto.add(Texto5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 790, -1));
+
+        Texto6.setFont(new java.awt.Font("Monospaced", 0, 16)); // NOI18N
+        Texto6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Texto6.setText("caso contrario, tudo isso terá sido em vão");
+        Texto6.setToolTipText("");
+        PanelTexto.add(Texto6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 790, -1));
+
+        Texto7.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        Texto7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Texto7.setText("</Continue com os estudos>");
+        Texto7.setToolTipText("");
+        PanelTexto.add(Texto7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 790, 90));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Finalização exercicios.png"))); // NOI18N
+        PanelTexto.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 810, 560));
 
@@ -224,8 +233,13 @@ public class JavaFinal extends javax.swing.JFrame {
     private javax.swing.JPanel PanelMain;
     private javax.swing.JPanel PanelTexto;
     private javax.swing.JLabel Superior;
-    private javax.swing.JLabel Texto2;
+    private javax.swing.JLabel Texto3;
+    private javax.swing.JLabel Texto4;
+    private javax.swing.JLabel Texto5;
+    private javax.swing.JLabel Texto6;
+    private javax.swing.JLabel Texto7;
     private javax.swing.JLabel Voltar;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
