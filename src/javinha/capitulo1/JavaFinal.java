@@ -148,7 +148,7 @@ public class JavaFinal extends javax.swing.JFrame {
         PanelTexto.add(Texto7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 790, 90));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Finalização exercicios.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/finalizacao.png"))); // NOI18N
         PanelTexto.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 810, 560));

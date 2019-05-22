@@ -252,7 +252,7 @@
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/Finaliza&#xe7;&#xe3;o exercicios.png"/>
+                  <Image iconType="3" name="/imagens/finalizacao.png"/>
                 </Property>
               </Properties>
               <Constraints>
