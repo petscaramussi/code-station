@@ -503,6 +503,16 @@ public class JavaChecklist extends javax.swing.JFrame {
             j.show();
             this.hide();
         }
+        if (Button19.isSelected() == true) {
+            JavaPergunta19 j = new JavaPergunta19();
+            j.show();
+            this.hide();
+        }
+        if (Button20.isSelected() == true) {
+            JavaPergunta20 j = new JavaPergunta20();
+            j.show();
+            this.hide();
+        }
     }//GEN-LAST:event_ButtonMouseClicked
 
     private void Button19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button19ActionPerformed

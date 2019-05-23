@@ -11,19 +11,19 @@ import javax.swing.JOptionPane;
  *
  * @author archwinlinu
  */
-public class JavaPergunta18 extends javax.swing.JFrame {
+public class JavaPergunta20 extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public JavaPergunta18() {
+    public JavaPergunta20() {
         setUndecorated(true);
         initComponents();
         setSize(810, 580);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        setDefaultCloseOperation(JavaPergunta18.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JavaPergunta20.EXIT_ON_CLOSE);
     }
 
     int xx, xy;
@@ -168,33 +168,33 @@ public class JavaPergunta18 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("Três tipos de teste booleanos:");
+        Texto2.setText("Qual desses operadores representa igualdade");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText(">, >>, <");
+        Button1.setText("==");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText("||, &&, %");
+        Button2.setText("=");
 
         Button3.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button3);
         Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText(">, <, = ");
+        Button3.setText(">");
 
         Button4.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button4);
         Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("if, for, while");
+        Button4.setText("<");
 
         Button5.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button5);
         Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText(">, <, ==");
+        Button5.setText("Nenhuma das alternativas");
 
         Button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
@@ -276,19 +276,7 @@ public class JavaPergunta18 extends javax.swing.JFrame {
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
         if (Button1.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button2.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button3.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button4.isSelected() == true) {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-        if (Button5.isSelected() == true) {
-            JavaPergunta18 j = new JavaPergunta18();
+            JavaFinal j = new JavaFinal();
             int botaoDialogo = JOptionPane.YES_NO_OPTION;
             int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
             if (resultadoDialogo == 0) {
@@ -299,6 +287,18 @@ public class JavaPergunta18 extends javax.swing.JFrame {
                 System.out.println("No Option");
                 JOptionPane.showMessageDialog(this, "Clique em 'Yes' para avançar para próxima questão");
             }
+        }
+        if (Button2.isSelected() == true) {
+           JOptionPane.showMessageDialog(null, "Você errou");
+        }
+        if (Button3.isSelected() == true) {
+            JOptionPane.showMessageDialog(null, "Você errou");
+        }
+        if (Button4.isSelected() == true) {
+            JOptionPane.showMessageDialog(null, "Você errou");
+        }
+        if (Button5.isSelected() == true) {
+            JOptionPane.showMessageDialog(null, "Você errou");
         }
     }//GEN-LAST:event_ButtonMouseClicked
 
@@ -345,20 +345,20 @@ public class JavaPergunta18 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta18.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta20.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta18.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta20.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta18.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta20.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta18.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta20.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new JavaPergunta18().setVisible(true);
+            new JavaPergunta20().setVisible(true);
         });
     }
 
