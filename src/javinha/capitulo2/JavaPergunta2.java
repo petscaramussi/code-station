@@ -171,7 +171,7 @@ public class JavaPergunta2 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("Uma Casa esta para uma planta arquitetonica,");
+        Texto2.setText("Uma casa esta para uma planta arquitetonica,");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
@@ -293,7 +293,7 @@ public class JavaPergunta2 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        boolean r = Button3.isSelected();
+        boolean r = Button2.isSelected();
 
         if (r == true) {
             JavaPergunta3 j = new JavaPergunta3();

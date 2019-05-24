@@ -171,7 +171,7 @@ public class JavaPergunta7 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("Ao definir uma classe em um programa orientado a objeto,");
+        Texto2.setText("Ao definir uma classe em um programa orientado a objeto, o");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
@@ -234,7 +234,7 @@ public class JavaPergunta7 extends javax.swing.JFrame {
 
         Texto3.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto3.setText("o programador pode especificar ou mais construtores, cuja a função é?");
+        Texto3.setText("programador pode especificar um ou mais construtores, cuja a função é?");
         Texto3.setToolTipText("");
 
         javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
@@ -413,20 +413,6 @@ public class JavaPergunta7 extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(JavaPergunta7.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

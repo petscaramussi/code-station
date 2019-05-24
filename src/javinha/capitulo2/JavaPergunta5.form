@@ -356,7 +356,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="p&#xfa;blico, protegido e privado "/>
+                <Property name="text" type="java.lang.String" value="P&#xfa;blico, protegido e privado "/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button2ActionPerformed"/>
@@ -373,7 +373,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="p&#xfa;blico, privatizado e secundario"/>
+                <Property name="text" type="java.lang.String" value="P&#xfa;blico, privatizado e secundario"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button3ActionPerformed"/>
@@ -390,7 +390,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="p&#xfa;blico, protgido e prim&#xe1;rio"/>
+                <Property name="text" type="java.lang.String" value="P&#xfa;blico, protgido e prim&#xe1;rio"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button4ActionPerformed"/>
@@ -407,7 +407,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="p&#xfa;blico, privado e secundario"/>
+                <Property name="text" type="java.lang.String" value="P&#xfa;blico, privado e secundario"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button5ActionPerformed"/>
