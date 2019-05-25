@@ -1,3 +1,3 @@
 # code-station
 
-.jar + lib
+.jar + lib = dist
