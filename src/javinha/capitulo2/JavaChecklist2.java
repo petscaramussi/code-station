@@ -57,6 +57,16 @@ public class JavaChecklist2 extends javax.swing.JFrame {
         Button9 = new javax.swing.JRadioButton();
         Button10 = new javax.swing.JRadioButton();
         Button = new javax.swing.JLabel();
+        Button11 = new javax.swing.JRadioButton();
+        Button12 = new javax.swing.JRadioButton();
+        Button13 = new javax.swing.JRadioButton();
+        Button14 = new javax.swing.JRadioButton();
+        Button15 = new javax.swing.JRadioButton();
+        Button16 = new javax.swing.JRadioButton();
+        Button17 = new javax.swing.JRadioButton();
+        Button18 = new javax.swing.JRadioButton();
+        Button19 = new javax.swing.JRadioButton();
+        Button20 = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(810, 580));
@@ -200,22 +210,79 @@ public class JavaChecklist2 extends javax.swing.JFrame {
             }
         });
 
+        Button11.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button11);
+        Button11.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button11.setText("Pergunta 11");
+        Button11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button11MouseClicked(evt);
+            }
+        });
+
+        Button12.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button12);
+        Button12.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button12.setText("Pergunta 12");
+
+        Button13.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button13);
+        Button13.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button13.setText("Pergunta 13");
+
+        Button14.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button14);
+        Button14.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button14.setText("Pergunta 14");
+
+        Button15.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button15);
+        Button15.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button15.setText("Pergunta 15");
+
+        Button16.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button16);
+        Button16.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button16.setText("Pergunta 16");
+
+        Button17.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button17);
+        Button17.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button17.setText("Pergunta 17");
+        Button17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button17ActionPerformed(evt);
+            }
+        });
+
+        Button18.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button18);
+        Button18.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button18.setText("Pergunta 18");
+        Button18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button18ActionPerformed(evt);
+            }
+        });
+
+        Button19.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button19);
+        Button19.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button19.setText("Pergunta 19");
+
+        Button20.setBackground(new java.awt.Color(255, 255, 255));
+        buttonGroup1.add(Button20);
+        Button20.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
+        Button20.setText("Pergunta 20");
+
         javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
         PanelTexto.setLayout(PanelTextoLayout);
         PanelTextoLayout.setHorizontalGroup(
             PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelTextoLayout.createSequentialGroup()
                 .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(Icon, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Texto1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 790, Short.MAX_VALUE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(Button9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -227,7 +294,25 @@ public class JavaChecklist2 extends javax.swing.JFrame {
                             .addComponent(Button2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button10, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(111, 111, 111)
+                        .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(Button19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button18, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button14, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button20, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(222, 222, 222))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelTextoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Icon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Texto1, javax.swing.GroupLayout.DEFAULT_SIZE, 790, Short.MAX_VALUE)
+                            .addComponent(Button, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 786, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         PanelTextoLayout.setVerticalGroup(
@@ -238,26 +323,48 @@ public class JavaChecklist2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto1)
                 .addGap(49, 49, 49)
-                .addComponent(Button1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Button2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Button3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Button4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Button5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Button6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Button7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Button8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Button9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Button10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(PanelTextoLayout.createSequentialGroup()
+                        .addComponent(Button1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button10))
+                    .addGroup(PanelTextoLayout.createSequentialGroup()
+                        .addComponent(Button11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button19)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Button20)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(Button)
                 .addGap(24, 24, 24))
         );
@@ -336,6 +443,16 @@ public class JavaChecklist2 extends javax.swing.JFrame {
             j.show();
             this.hide();
         }
+        if (Button11.isSelected() == true) {
+            JavaPergunta11 j = new JavaPergunta11();
+            j.show();
+            this.hide();
+        }
+        if (Button12.isSelected() == true) {
+            JavaPergunta12 j = new JavaPergunta12();
+            j.show();
+            this.hide();
+        }
     }//GEN-LAST:event_ButtonMouseClicked
 
     private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
@@ -368,6 +485,18 @@ public class JavaChecklist2 extends javax.swing.JFrame {
     private void Button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Button8ActionPerformed
+
+    private void Button11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button11MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button11MouseClicked
+
+    private void Button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button17ActionPerformed
+
+    private void Button18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button18ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -407,7 +536,17 @@ public class JavaChecklist2 extends javax.swing.JFrame {
     private javax.swing.JLabel Button;
     private javax.swing.JRadioButton Button1;
     private javax.swing.JRadioButton Button10;
+    private javax.swing.JRadioButton Button11;
+    private javax.swing.JRadioButton Button12;
+    private javax.swing.JRadioButton Button13;
+    private javax.swing.JRadioButton Button14;
+    private javax.swing.JRadioButton Button15;
+    private javax.swing.JRadioButton Button16;
+    private javax.swing.JRadioButton Button17;
+    private javax.swing.JRadioButton Button18;
+    private javax.swing.JRadioButton Button19;
     private javax.swing.JRadioButton Button2;
+    private javax.swing.JRadioButton Button20;
     private javax.swing.JRadioButton Button3;
     private javax.swing.JRadioButton Button4;
     private javax.swing.JRadioButton Button5;
