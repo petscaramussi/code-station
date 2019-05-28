@@ -266,7 +266,7 @@ public class JavaPergunta3 extends javax.swing.JFrame {
                 .addComponent(Texto2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(Button1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Button2)
@@ -276,9 +276,9 @@ public class JavaPergunta3 extends javax.swing.JFrame {
                 .addComponent(Button4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Button5)
-                .addGap(90, 90, 90)
+                .addGap(79, 79, 79)
                 .addComponent(Button)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
 
         PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 540, 560));
@@ -305,7 +305,7 @@ public class JavaPergunta3 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        boolean r = Button4.isSelected();
+        boolean r = Button5.isSelected();
 
         if (r == true) {
             JavaPergunta4 j = new JavaPergunta4();

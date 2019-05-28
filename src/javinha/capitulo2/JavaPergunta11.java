@@ -58,8 +58,6 @@ public class JavaPergunta11 extends javax.swing.JFrame {
         Button4 = new javax.swing.JRadioButton();
         Button5 = new javax.swing.JRadioButton();
         Button = new javax.swing.JLabel();
-        Texto3 = new javax.swing.JLabel();
-        Texto4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(810, 580));
@@ -172,13 +170,13 @@ public class JavaPergunta11 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("falta fazer");
+        Texto2.setText("para que serve o operador ponto (.)");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("a");
+        Button1.setText("Cria um objeto");
         Button1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button1ActionPerformed(evt);
@@ -188,7 +186,7 @@ public class JavaPergunta11 extends javax.swing.JFrame {
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText("b");
+        Button2.setText("Cria uma classe");
         Button2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button2ActionPerformed(evt);
@@ -198,7 +196,7 @@ public class JavaPergunta11 extends javax.swing.JFrame {
         Button3.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button3);
         Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText("c");
+        Button3.setText("Cria uma instancia");
         Button3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button3ActionPerformed(evt);
@@ -208,7 +206,7 @@ public class JavaPergunta11 extends javax.swing.JFrame {
         Button4.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button4);
         Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("d");
+        Button4.setText("Separa duas palavras");
         Button4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button4ActionPerformed(evt);
@@ -218,7 +216,7 @@ public class JavaPergunta11 extends javax.swing.JFrame {
         Button5.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button5);
         Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText("e");
+        Button5.setText("Lhe da acesso ao estado e comportamento de um objeto");
         Button5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Button5ActionPerformed(evt);
@@ -233,16 +231,6 @@ public class JavaPergunta11 extends javax.swing.JFrame {
             }
         });
 
-        Texto3.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        Texto3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto3.setText("falta fazer");
-        Texto3.setToolTipText("");
-
-        Texto4.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
-        Texto4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto4.setText("falata fazer");
-        Texto4.setToolTipText("");
-
         javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
         PanelTexto.setLayout(PanelTextoLayout);
         PanelTextoLayout.setHorizontalGroup(
@@ -256,29 +244,16 @@ public class JavaPergunta11 extends javax.swing.JFrame {
                             .addComponent(Texto1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(PanelTextoLayout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Button, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE))
                     .addGroup(PanelTextoLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(Button5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Button1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelTextoLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
                         .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Texto4, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Texto3, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Texto2, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 29, Short.MAX_VALUE)))
+                            .addComponent(Button5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(Texto2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         PanelTextoLayout.setVerticalGroup(
@@ -290,11 +265,7 @@ public class JavaPergunta11 extends javax.swing.JFrame {
                 .addComponent(Texto1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Texto2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Texto3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Texto4)
-                .addGap(16, 16, 16)
+                .addGap(46, 46, 46)
                 .addComponent(Button1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Button2)
@@ -304,7 +275,7 @@ public class JavaPergunta11 extends javax.swing.JFrame {
                 .addComponent(Button4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Button5)
-                .addGap(51, 51, 51)
+                .addGap(73, 73, 73)
                 .addComponent(Button)
                 .addContainerGap(75, Short.MAX_VALUE))
         );
@@ -333,10 +304,10 @@ public class JavaPergunta11 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        boolean r = Button4.isSelected();
+        boolean r = Button5.isSelected();
 
         if (r == true) {
-            JavaPergunta11 j = new JavaPergunta11();
+            JavaPergunta12 j = new JavaPergunta12();
             int botaoDialogo = JOptionPane.YES_NO_OPTION;
             int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
             if (resultadoDialogo == 0) {
@@ -425,8 +396,6 @@ public class JavaPergunta11 extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
@@ -452,8 +421,6 @@ public class JavaPergunta11 extends javax.swing.JFrame {
     private javax.swing.JLabel Superior;
     private javax.swing.JLabel Texto1;
     private javax.swing.JLabel Texto2;
-    private javax.swing.JLabel Texto3;
-    private javax.swing.JLabel Texto4;
     private javax.swing.JLabel Voltar;
     private javax.swing.ButtonGroup buttonGroup1;
     // End of variables declaration//GEN-END:variables

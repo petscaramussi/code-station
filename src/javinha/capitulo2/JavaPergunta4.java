@@ -286,7 +286,7 @@ public class JavaPergunta4 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        boolean r = Button5.isSelected();
+        boolean r = Button3.isSelected();
 
         if (r == true) {
             JavaPergunta5 j = new JavaPergunta5();
