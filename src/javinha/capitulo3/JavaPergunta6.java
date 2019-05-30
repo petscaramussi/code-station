@@ -12,19 +12,19 @@ import javax.swing.JOptionPane;
  *
  * @author archwinlinu
  */
-public class JavaPergunta1 extends javax.swing.JFrame {
+public class JavaPergunta6 extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public JavaPergunta1() {
+    public JavaPergunta6() {
         setUndecorated(true);
         initComponents();
         setSize(810, 580);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        setDefaultCloseOperation(JavaPergunta1.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JavaPergunta6.EXIT_ON_CLOSE);
     }
 
     int xx, xy;
@@ -53,9 +53,6 @@ public class JavaPergunta1 extends javax.swing.JFrame {
         Texto2 = new javax.swing.JLabel();
         Button1 = new javax.swing.JRadioButton();
         Button2 = new javax.swing.JRadioButton();
-        Button3 = new javax.swing.JRadioButton();
-        Button4 = new javax.swing.JRadioButton();
-        Button5 = new javax.swing.JRadioButton();
         Button = new javax.swing.JLabel();
         Texto3 = new javax.swing.JLabel();
 
@@ -170,43 +167,18 @@ public class JavaPergunta1 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("Selecione o valor que pode ser armazenado em uma váriavel do tipo");
+        Texto2.setText("Na pergunta anterior, nós dissemos que uma string é uma váriavel.");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("Verdadeiro ou falso");
+        Button1.setText("Vercadeiro");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText("1.50");
-
-        Button3.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button3);
-        Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText("1f");
-
-        Button4.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button4);
-        Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("1");
-        Button4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button4ActionPerformed(evt);
-            }
-        });
-
-        Button5.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button5);
-        Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText("\"1\"");
-        Button5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button5ActionPerformed(evt);
-            }
-        });
+        Button2.setText("Falso");
 
         Button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
@@ -218,7 +190,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
 
         Texto3.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto3.setText("int");
+        Texto3.setText("Isto está correto?");
         Texto3.setToolTipText("");
 
         javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
@@ -240,9 +212,6 @@ public class JavaPergunta1 extends javax.swing.JFrame {
                     .addGroup(PanelTextoLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Button5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
@@ -262,13 +231,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
                 .addComponent(Button1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Button2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Button3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Button4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Button5)
-                .addGap(63, 63, 63)
+                .addGap(150, 150, 150)
                 .addComponent(Button)
                 .addContainerGap(69, Short.MAX_VALUE))
         );
@@ -294,27 +257,6 @@ public class JavaPergunta1 extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_FecharMouseClicked
-
-    private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
-        // TODO add your handling code here:
-        boolean r = Button4.isSelected();
-
-        if (r == true) {
-            JavaPergunta2 j = new JavaPergunta2();
-            int botaoDialogo = JOptionPane.YES_NO_OPTION;
-            int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
-            if (resultadoDialogo == 0) {
-                System.out.println("Yes option");
-                j.show();
-                this.hide();
-            } else {
-                System.out.println("No Option");
-                JOptionPane.showMessageDialog(this, "Clique em 'Yes' para avançar para próxima questão");
-            }
-        } else {
-            JOptionPane.showMessageDialog(null, "Você errou");
-        }
-    }//GEN-LAST:event_ButtonMouseClicked
 
     private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
         // TODO add your handling code here:
@@ -342,13 +284,26 @@ public class JavaPergunta1 extends javax.swing.JFrame {
         this.hide();
     }//GEN-LAST:event_Capitulo2MouseClicked
 
-    private void Button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button4ActionPerformed
+    private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Button4ActionPerformed
+        boolean r = Button2.isSelected();
 
-    private void Button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button5ActionPerformed
+        if (r == true) {
+            JavaPergunta6 j = new JavaPergunta6();
+            int botaoDialogo = JOptionPane.YES_NO_OPTION;
+            int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
+            if (resultadoDialogo == 0) {
+                System.out.println("Yes option");
+                j.show();
+                this.hide();
+            } else {
+                System.out.println("No Option");
+                JOptionPane.showMessageDialog(this, "Clique em 'Yes' para avançar para próxima questão");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Você errou");
+        }
+    }//GEN-LAST:event_ButtonMouseClicked
 
     /**
      * @param args the command line arguments
@@ -367,20 +322,82 @@ public class JavaPergunta1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta6.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta6.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta6.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta6.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new JavaPergunta1().setVisible(true);
+            new JavaPergunta6().setVisible(true);
         });
     }
 
@@ -388,9 +405,6 @@ public class JavaPergunta1 extends javax.swing.JFrame {
     private javax.swing.JLabel Button;
     private javax.swing.JRadioButton Button1;
     private javax.swing.JRadioButton Button2;
-    private javax.swing.JRadioButton Button3;
-    private javax.swing.JRadioButton Button4;
-    private javax.swing.JRadioButton Button5;
     private javax.swing.JLabel Capitulo2;
     private javax.swing.JLabel Fechar;
     private javax.swing.JLabel Icon;

@@ -12,19 +12,19 @@ import javax.swing.JOptionPane;
  *
  * @author archwinlinu
  */
-public class JavaPergunta1 extends javax.swing.JFrame {
+public class JavaPergunta4 extends javax.swing.JFrame {
 
     /**
      * Creates new form Menu
      */
-    public JavaPergunta1() {
+    public JavaPergunta4() {
         setUndecorated(true);
         initComponents();
         setSize(810, 580);
         setLocationRelativeTo(null);
         setTitle("Inicio");
         setResizable(false);
-        setDefaultCloseOperation(JavaPergunta1.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JavaPergunta4.EXIT_ON_CLOSE);
     }
 
     int xx, xy;
@@ -176,7 +176,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("Verdadeiro ou falso");
+        Button1.setText("Verdeiro ou falso");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
@@ -218,7 +218,7 @@ public class JavaPergunta1 extends javax.swing.JFrame {
 
         Texto3.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto3.setText("int");
+        Texto3.setText("boolean");
         Texto3.setToolTipText("");
 
         javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
@@ -297,10 +297,10 @@ public class JavaPergunta1 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        boolean r = Button4.isSelected();
+        boolean r = Button1.isSelected();
 
         if (r == true) {
-            JavaPergunta2 j = new JavaPergunta2();
+            JavaPergunta5 j = new JavaPergunta5();
             int botaoDialogo = JOptionPane.YES_NO_OPTION;
             int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
             if (resultadoDialogo == 0) {
@@ -367,20 +367,34 @@ public class JavaPergunta1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JavaPergunta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JavaPergunta4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new JavaPergunta1().setVisible(true);
+            new JavaPergunta4().setVisible(true);
         });
     }
 
