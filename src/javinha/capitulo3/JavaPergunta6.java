@@ -173,7 +173,7 @@ public class JavaPergunta6 extends javax.swing.JFrame {
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("Vercadeiro");
+        Button1.setText("Verdadeiro");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);

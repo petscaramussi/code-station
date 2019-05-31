@@ -5,7 +5,6 @@ package javinha.capitulo3;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import javinha.capitulo2.*;
 import javinha.capitulo1.*;
 
 /**
@@ -394,6 +393,106 @@ public class JavaChecklist3 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
+        if (Button1.isSelected() == true) {
+            JavaPergunta1 j = new JavaPergunta1();
+            j.show();
+            this.hide();
+        }
+        if (Button2.isSelected() == true) {
+            JavaPergunta2 j = new JavaPergunta2();
+            j.show();
+            this.hide();
+        }
+        if (Button3.isSelected() == true) {
+            JavaPergunta3 j = new JavaPergunta3();
+            j.show();
+            this.hide();
+        }
+        if (Button4.isSelected() == true) {
+            JavaPergunta4 j = new JavaPergunta4();
+            j.show();
+            this.hide();
+        }
+        if (Button5.isSelected() == true) {
+            JavaPergunta5 j = new JavaPergunta5();
+            j.show();
+            this.hide();
+        }
+        if (Button6.isSelected() == true) {
+            JavaPergunta6 j = new JavaPergunta6();
+            j.show();
+            this.hide();
+        }
+        if (Button7.isSelected() == true) {
+            JavaPergunta7 j = new JavaPergunta7();
+            j.show();
+            this.hide();
+        }
+        if (Button8.isSelected() == true) {
+            JavaPergunta8 j = new JavaPergunta8();
+            j.show();
+            this.hide();
+        }
+        if (Button9.isSelected() == true) {
+            JavaPergunta9 j = new JavaPergunta9();
+            j.show();
+            this.hide();
+        }
+        if (Button10.isSelected() == true) {
+            JavaPergunta10 j = new JavaPergunta10();
+            j.show();
+            this.hide();
+        }
+        if (Button11.isSelected() == true) {
+            JavaPergunta11 j = new JavaPergunta11();
+            j.show();
+            this.hide();
+        }
+        if (Button12.isSelected() == true) {
+            JavaPergunta12 j = new JavaPergunta12();
+            j.show();
+            this.hide();
+        }
+        if (Button13.isSelected() == true) {
+            JavaPergunta13 j = new JavaPergunta13();
+            j.show();
+            this.hide();
+        }
+        if (Button14.isSelected() == true) {
+            JavaPergunta14 j = new JavaPergunta14();
+            j.show();
+            this.hide();
+        }
+        if (Button15.isSelected() == true) {
+            JavaPergunta15 j = new JavaPergunta15();
+            j.show();
+            this.hide();
+        }
+//        if (Button16.isSelected() == true) {
+//            JavaPergunta16 j = new JavaPergunta16();
+//            j.show();
+//            this.hide();
+//        }
+//        if (Button17.isSelected() == true) {
+//            JavaPergunta17 j = new JavaPergunta17();
+//            j.show();
+//            this.hide();
+//        }
+//        if (Button18.isSelected() == true) {
+//            JavaPergunta18 j = new JavaPergunta18();
+//            j.show();
+//            this.hide();
+//        }
+//        if (Button19.isSelected() == true) {
+//            JavaPergunta19 j = new JavaPergunta19();
+//            j.show();
+//            this.hide();
+//        }
+//        if (Button20.isSelected() == true) {
+//            JavaPergunta20 j = new JavaPergunta20();
+//            j.show();
+//            this.hide();
+//        }
     }//GEN-LAST:event_ButtonMouseClicked
 
     private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked

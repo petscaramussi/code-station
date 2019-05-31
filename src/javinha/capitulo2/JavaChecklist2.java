@@ -453,6 +453,46 @@ public class JavaChecklist2 extends javax.swing.JFrame {
             j.show();
             this.hide();
         }
+        if (Button13.isSelected() == true) {
+            JavaPergunta13 j = new JavaPergunta13();
+            j.show();
+            this.hide();
+        }
+        if (Button14.isSelected() == true) {
+            JavaPergunta14 j = new JavaPergunta14();
+            j.show();
+            this.hide();
+        }
+        if (Button15.isSelected() == true) {
+            JavaPergunta15 j = new JavaPergunta15();
+            j.show();
+            this.hide();
+        }
+        if (Button16.isSelected() == true) {
+            JavaPergunta16 j = new JavaPergunta16();
+            j.show();
+            this.hide();
+        }
+        if (Button17.isSelected() == true) {
+            JavaPergunta17 j = new JavaPergunta17();
+            j.show();
+            this.hide();
+        }
+        if (Button18.isSelected() == true) {
+            JavaPergunta18 j = new JavaPergunta18();
+            j.show();
+            this.hide();
+        }
+        if (Button19.isSelected() == true) {
+            JavaPergunta19 j = new JavaPergunta19();
+            j.show();
+            this.hide();
+        }
+        if (Button20.isSelected() == true) {
+            JavaPergunta20 j = new JavaPergunta20();
+            j.show();
+            this.hide();
+        }
     }//GEN-LAST:event_ButtonMouseClicked
 
     private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
