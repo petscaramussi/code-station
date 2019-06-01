@@ -264,9 +264,6 @@
             <Component class="javax.swing.JLabel" name="Fundo">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/imagens/wallpaper2.png"/>
-                </Property>
               </Properties>
             </Component>
           </SubComponents>

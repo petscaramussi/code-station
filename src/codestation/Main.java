@@ -6,8 +6,10 @@
 package codestation;
 
 import java.net.URI;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javinha.Javinha;
 
@@ -28,9 +30,20 @@ public class Main extends javax.swing.JFrame {
         setTitle("Inicio");
         setResizable(false);
         setDefaultCloseOperation(Main.EXIT_ON_CLOSE);
+        trocaImg();
     }
 
     int xx, xy;
+
+    public void trocaImg() {
+        Random r = new Random();
+        int random = r.nextInt(11);
+        random += 1;
+        System.out.println("/imagens/wallpaper" + random + ".png");
+
+        ImageIcon i = new ImageIcon(getClass().getResource("/imagens/wallpaper" + random + ".png"));
+        Fundo.setIcon(i);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -162,7 +175,6 @@ public class Main extends javax.swing.JFrame {
         PanelFundo.setBackground(new java.awt.Color(255, 255, 255));
 
         Fundo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/wallpaper2.png"))); // NOI18N
 
         javax.swing.GroupLayout PanelFundoLayout = new javax.swing.GroupLayout(PanelFundo);
         PanelFundo.setLayout(PanelFundoLayout);
