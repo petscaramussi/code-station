@@ -5,6 +5,7 @@
  */
 package codestation;
 
+import java.awt.Color;
 import java.net.URI;
 import java.util.Random;
 import java.util.logging.Level;
@@ -41,7 +42,11 @@ public class Main extends javax.swing.JFrame {
         random += 1;
         System.out.println("/imagens/wallpaper" + random + ".png");
 
+        
         ImageIcon i = new ImageIcon(getClass().getResource("/imagens/wallpaper" + random + ".png"));
+        if(random == 6){
+            CodeStation.setForeground(Color.BLACK);
+        }
         Fundo.setIcon(i);
     }
 
