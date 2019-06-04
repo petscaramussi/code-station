@@ -249,7 +249,7 @@ public class JavaPergunta17 extends javax.swing.JFrame {
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
         if (Button1.isSelected() == true) {
-            JavaPergunta17 j = new JavaPergunta17();
+            JavaPergunta18 j = new JavaPergunta18();
             int botaoDialogo = JOptionPane.YES_NO_OPTION;
             int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
             if (resultadoDialogo == 0) {

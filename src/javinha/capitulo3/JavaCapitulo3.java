@@ -68,7 +68,7 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
         Texto10 = new javax.swing.JLabel();
         Texto11 = new javax.swing.JLabel();
         Texto12 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(810, 580));
@@ -206,7 +206,7 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
         Texto1.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Texto1.setForeground(new java.awt.Color(248, 152, 29));
         Texto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto1.setText("Capítulo 2");
+        Texto1.setText("Capítulo 3");
         Texto1.setToolTipText("");
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
@@ -264,15 +264,11 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
         Texto12.setText("classe e um objeto. Examinaremos como os objetos podem melhorar sua vida");
         Texto12.setToolTipText("");
 
-        jButton1.setText("next");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
-            }
-        });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jLabel1MouseClicked(evt);
             }
         });
 
@@ -298,9 +294,8 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
                     .addComponent(Texto12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(PanelTextoLayout.createSequentialGroup()
-                .addGap(235, 235, 235)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 528, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         PanelTextoLayout.setVerticalGroup(
             PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -331,9 +326,9 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
                 .addComponent(Texto11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Texto12)
-                .addGap(57, 57, 57)
-                .addComponent(jButton1)
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         PanelMain.add(PanelTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 540, 560));
@@ -358,14 +353,6 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_FecharMouseClicked
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
-        JavaChecklist3 j = new JavaChecklist3();
-        j.show();
-        this.hide();
-        
-    }//GEN-LAST:event_jButton1MouseClicked
-
     private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
         // TODO add your handling code here:
         setState(ICONIFIED);
@@ -385,10 +372,6 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
         this.setLocation(x-xx, y-xy);
     }//GEN-LAST:event_SuperiorMouseDragged
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void Capitulo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo1MouseClicked
         // TODO add your handling code here:
         JavaCapitulo1 j2 = new JavaCapitulo1();
@@ -400,6 +383,13 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
            // TODO add your handling code here:
            JOptionPane.showMessageDialog(null, "Este capítulo ainda não está disponível\nSentimos muito");
     }//GEN-LAST:event_Capitulo3MouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        JavaChecklist3 j = new JavaChecklist3();
+        j.show();
+        this.hide();
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -463,6 +453,6 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
     private javax.swing.JLabel Texto8;
     private javax.swing.JLabel Texto9;
     private javax.swing.JLabel Voltar;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

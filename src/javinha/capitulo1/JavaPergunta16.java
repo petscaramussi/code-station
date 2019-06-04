@@ -282,7 +282,7 @@ public class JavaPergunta16 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Você errou");
         }
         if (Button3.isSelected() == true) {
-            JavaPergunta16 j = new JavaPergunta16();
+            JavaPergunta17 j = new JavaPergunta17();
             int botaoDialogo = JOptionPane.YES_NO_OPTION;
             int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
             if (resultadoDialogo == 0) {

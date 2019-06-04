@@ -174,16 +174,11 @@
                               </Group>
                               <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="Button19" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="Button18" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="Button17" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="Button16" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="Button15" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="Button15" alignment="0" pref="110" max="32767" attributes="0"/>
                                   <Component id="Button14" alignment="0" max="32767" attributes="0"/>
                                   <Component id="Button13" alignment="0" max="32767" attributes="0"/>
                                   <Component id="Button12" alignment="0" max="32767" attributes="0"/>
                                   <Component id="Button11" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="Button20" alignment="1" min="-2" pref="110" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="222" max="-2" attributes="0"/>
                           </Group>
@@ -240,16 +235,7 @@
                               <Component id="Button14" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="Button15" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Button16" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Button17" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Button18" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Button19" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Button20" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="26" max="32767" attributes="0"/>
@@ -518,82 +504,6 @@
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Pergunta 15"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="Button16">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Pergunta 16"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="Button17">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Pergunta 17"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button17ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="Button18">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Pergunta 18"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button18ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="Button19">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Pergunta 19"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="Button20">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Pergunta 20"/>
               </Properties>
             </Component>
           </SubComponents>

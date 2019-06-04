@@ -291,7 +291,7 @@ public class JavaPergunta11 extends javax.swing.JFrame {
         boolean r = Button4.isSelected();
 
         if (r == true) {
-            JavaPergunta6 j = new JavaPergunta6();
+            JavaPergunta12 j = new JavaPergunta12();
             int botaoDialogo = JOptionPane.YES_NO_OPTION;
             int resultadoDialogo = JOptionPane.showConfirmDialog(this, "Parabens! Você acertou!\nAvançar para a próxima questão?!", "Caixinha da vitória", botaoDialogo, JOptionPane.INFORMATION_MESSAGE);
             if (resultadoDialogo == 0) {

@@ -62,11 +62,6 @@ public class JavaChecklist3 extends javax.swing.JFrame {
         Button13 = new javax.swing.JRadioButton();
         Button14 = new javax.swing.JRadioButton();
         Button15 = new javax.swing.JRadioButton();
-        Button16 = new javax.swing.JRadioButton();
-        Button17 = new javax.swing.JRadioButton();
-        Button18 = new javax.swing.JRadioButton();
-        Button19 = new javax.swing.JRadioButton();
-        Button20 = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(810, 580));
@@ -240,41 +235,6 @@ public class JavaChecklist3 extends javax.swing.JFrame {
         Button15.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Button15.setText("Pergunta 15");
 
-        Button16.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button16);
-        Button16.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button16.setText("Pergunta 16");
-
-        Button17.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button17);
-        Button17.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button17.setText("Pergunta 17");
-        Button17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button17ActionPerformed(evt);
-            }
-        });
-
-        Button18.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button18);
-        Button18.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button18.setText("Pergunta 18");
-        Button18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button18ActionPerformed(evt);
-            }
-        });
-
-        Button19.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button19);
-        Button19.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button19.setText("Pergunta 19");
-
-        Button20.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button20);
-        Button20.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button20.setText("Pergunta 20");
-
         javax.swing.GroupLayout PanelTextoLayout = new javax.swing.GroupLayout(PanelTexto);
         PanelTexto.setLayout(PanelTextoLayout);
         PanelTextoLayout.setHorizontalGroup(
@@ -296,16 +256,11 @@ public class JavaChecklist3 extends javax.swing.JFrame {
                             .addComponent(Button10, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(111, 111, 111)
                         .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(Button19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button18, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button17, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button16, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Button15, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
                             .addComponent(Button14, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button20, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Button11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(222, 222, 222))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelTextoLayout.createSequentialGroup()
                         .addContainerGap()
@@ -354,16 +309,7 @@ public class JavaChecklist3 extends javax.swing.JFrame {
                         .addComponent(Button14)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Button15)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Button16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Button17)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Button18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Button19)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Button20)))
+                        .addGap(125, 125, 125)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(Button)
                 .addGap(24, 24, 24))
@@ -468,31 +414,6 @@ public class JavaChecklist3 extends javax.swing.JFrame {
             j.show();
             this.hide();
         }
-//        if (Button16.isSelected() == true) {
-//            JavaPergunta16 j = new JavaPergunta16();
-//            j.show();
-//            this.hide();
-//        }
-//        if (Button17.isSelected() == true) {
-//            JavaPergunta17 j = new JavaPergunta17();
-//            j.show();
-//            this.hide();
-//        }
-//        if (Button18.isSelected() == true) {
-//            JavaPergunta18 j = new JavaPergunta18();
-//            j.show();
-//            this.hide();
-//        }
-//        if (Button19.isSelected() == true) {
-//            JavaPergunta19 j = new JavaPergunta19();
-//            j.show();
-//            this.hide();
-//        }
-//        if (Button20.isSelected() == true) {
-//            JavaPergunta20 j = new JavaPergunta20();
-//            j.show();
-//            this.hide();
-//        }
     }//GEN-LAST:event_ButtonMouseClicked
 
     private void MinimizarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinimizarMouseClicked
@@ -529,14 +450,6 @@ public class JavaChecklist3 extends javax.swing.JFrame {
     private void Button11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button11MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_Button11MouseClicked
-
-    private void Button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button17ActionPerformed
-
-    private void Button18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button18ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -581,12 +494,7 @@ public class JavaChecklist3 extends javax.swing.JFrame {
     private javax.swing.JRadioButton Button13;
     private javax.swing.JRadioButton Button14;
     private javax.swing.JRadioButton Button15;
-    private javax.swing.JRadioButton Button16;
-    private javax.swing.JRadioButton Button17;
-    private javax.swing.JRadioButton Button18;
-    private javax.swing.JRadioButton Button19;
     private javax.swing.JRadioButton Button2;
-    private javax.swing.JRadioButton Button20;
     private javax.swing.JRadioButton Button3;
     private javax.swing.JRadioButton Button4;
     private javax.swing.JRadioButton Button5;
