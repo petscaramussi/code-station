@@ -65,6 +65,7 @@ public class Main extends javax.swing.JFrame {
         JavaScript = new javax.swing.JLabel();
         Java = new javax.swing.JLabel();
         Minimizar = new javax.swing.JLabel();
+        Ajuda1 = new javax.swing.JLabel();
         Ajuda = new javax.swing.JLabel();
         Fechar = new javax.swing.JLabel();
         Superior = new javax.swing.JLabel();
@@ -134,6 +135,17 @@ public class Main extends javax.swing.JFrame {
             }
         });
         PanelMain.add(Minimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 0, 20, 20));
+
+        Ajuda1.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
+        Ajuda1.setForeground(new java.awt.Color(171, 171, 171));
+        Ajuda1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Ajuda1.setText("</>");
+        Ajuda1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Ajuda1MouseClicked(evt);
+            }
+        });
+        PanelMain.add(Ajuda1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 0, -1, 20));
 
         Ajuda.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Ajuda.setForeground(new java.awt.Color(171, 171, 171));
@@ -269,6 +281,12 @@ public class Main extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_CodeStationMouseClicked
 
+    private void Ajuda1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Ajuda1MouseClicked
+        // TODO add your handling code here:
+        String[] args = new String[10000];
+        Navegador.main(args);
+    }//GEN-LAST:event_Ajuda1MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -312,6 +330,7 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Ajuda;
+    private javax.swing.JLabel Ajuda1;
     private javax.swing.JLabel Amarelo;
     private javax.swing.JLabel CodeStation;
     private javax.swing.JLabel Fechar;
