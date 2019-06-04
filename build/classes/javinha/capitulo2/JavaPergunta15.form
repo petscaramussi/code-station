@@ -233,14 +233,11 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                              <Component id="Button" pref="509" max="32767" attributes="0"/>
+                              <Component id="Button" pref="507" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="Button5" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="Button4" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="Button3" alignment="0" max="32767" attributes="0"/>
                                   <Component id="Button2" alignment="0" max="32767" attributes="0"/>
                                   <Component id="Button1" alignment="0" max="32767" attributes="0"/>
                               </Group>
@@ -264,15 +261,9 @@
                       <Component id="Button1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="Button2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Button3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Button4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="Button5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
                       <Component id="Button" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="75" max="32767" attributes="0"/>
+                      <EmptySpace pref="73" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -305,7 +296,7 @@
                   <Font name="Monospaced" size="14" style="0"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="Criacao correta de uma instancia"/>
+                <Property name="text" type="java.lang.String" value="Inst&#xe2;ncia &#xe9; um objeto?"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
@@ -320,7 +311,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Instancia i = new Instancia(){}"/>
+                <Property name="text" type="java.lang.String" value="Verdadeiro"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button1ActionPerformed"/>
@@ -340,61 +331,10 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Monospaced" size="12" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Instancia i = new Instancia()"/>
+                <Property name="text" type="java.lang.String" value="Falso"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button2ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="Button3">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Instancia i = new Instancia();"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button3ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="Button4">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Instancia i = new Instancia{};"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button4ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JRadioButton" name="Button5">
-              <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="buttonGroup1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Nenhuma das alternativas "/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button5ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Button">
