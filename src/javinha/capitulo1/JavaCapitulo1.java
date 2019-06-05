@@ -10,6 +10,7 @@ package javinha.capitulo1;
 import javax.swing.JOptionPane;
 import javinha.Javinha;
 import javinha.capitulo2.JavaCapitulo2;
+import javinha.capitulo3.JavaCapitulo3;
 
 /**
  *
@@ -380,7 +381,9 @@ public class JavaCapitulo1 extends javax.swing.JFrame {
 
     private void Capitulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo3MouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Este capítulo ainda não está disponível\nSentimos muito");
+        JavaCapitulo3 j = new JavaCapitulo3();
+        j.show();
+        this.hide();
     }//GEN-LAST:event_Capitulo3MouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked

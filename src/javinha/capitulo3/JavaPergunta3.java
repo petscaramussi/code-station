@@ -285,7 +285,7 @@ public class JavaPergunta3 extends javax.swing.JFrame {
 
     private void VoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VoltarMouseClicked
         // TODO add your handling code here:
-        JavaCapitulo2 j = new JavaCapitulo2();
+        JavaCapitulo3 j = new JavaCapitulo3();
         j.show();
         this.hide();
     }//GEN-LAST:event_VoltarMouseClicked

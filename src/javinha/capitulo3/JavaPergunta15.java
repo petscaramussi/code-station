@@ -53,9 +53,6 @@ public class JavaPergunta15 extends javax.swing.JFrame {
         Texto2 = new javax.swing.JLabel();
         Button1 = new javax.swing.JRadioButton();
         Button2 = new javax.swing.JRadioButton();
-        Button3 = new javax.swing.JRadioButton();
-        Button4 = new javax.swing.JRadioButton();
-        Button5 = new javax.swing.JRadioButton();
         Button = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -169,43 +166,18 @@ public class JavaPergunta15 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Texto2.setText("Quantos bits um double suporta");
+        Texto2.setText("Valor dessa operacão: x += 2;");
         Texto2.setToolTipText("");
 
         Button1.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button1);
         Button1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button1.setText("1");
+        Button1.setText("2");
 
         Button2.setBackground(new java.awt.Color(255, 255, 255));
         buttonGroup1.add(Button2);
         Button2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button2.setText("16");
-
-        Button3.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button3);
-        Button3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button3.setText("8");
-
-        Button4.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button4);
-        Button4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button4.setText("32");
-        Button4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button4ActionPerformed(evt);
-            }
-        });
-
-        Button5.setBackground(new java.awt.Color(255, 255, 255));
-        buttonGroup1.add(Button5);
-        Button5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        Button5.setText("64");
-        Button5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Button5ActionPerformed(evt);
-            }
-        });
+        Button2.setText("4");
 
         Button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao2.png"))); // NOI18N
@@ -229,13 +201,10 @@ public class JavaPergunta15 extends javax.swing.JFrame {
                             .addComponent(Texto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(PanelTextoLayout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Button, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE))
                     .addGroup(PanelTextoLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(PanelTextoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Button5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Button3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Button1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
@@ -253,13 +222,7 @@ public class JavaPergunta15 extends javax.swing.JFrame {
                 .addComponent(Button1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Button2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Button3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Button4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Button5)
-                .addGap(63, 63, 63)
+                .addGap(147, 147, 147)
                 .addComponent(Button)
                 .addContainerGap(75, Short.MAX_VALUE))
         );
@@ -276,7 +239,7 @@ public class JavaPergunta15 extends javax.swing.JFrame {
 
     private void VoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VoltarMouseClicked
         // TODO add your handling code here:
-        JavaCapitulo2 j = new JavaCapitulo2();
+        JavaCapitulo3 j = new JavaCapitulo3();
         j.show();
         this.hide();
     }//GEN-LAST:event_VoltarMouseClicked
@@ -288,7 +251,7 @@ public class JavaPergunta15 extends javax.swing.JFrame {
 
     private void ButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ButtonMouseClicked
         // TODO add your handling code here:
-        boolean r = Button5.isSelected();
+        boolean r = Button2.isSelected();
 
         if (r == true) {
             JavaFinal3 j = new JavaFinal3();
@@ -332,14 +295,6 @@ public class JavaPergunta15 extends javax.swing.JFrame {
         j.show();
         this.hide();
     }//GEN-LAST:event_Capitulo2MouseClicked
-
-    private void Button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button5ActionPerformed
-
-    private void Button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -33145,9 +33100,6 @@ public class JavaPergunta15 extends javax.swing.JFrame {
     private javax.swing.JLabel Button;
     private javax.swing.JRadioButton Button1;
     private javax.swing.JRadioButton Button2;
-    private javax.swing.JRadioButton Button3;
-    private javax.swing.JRadioButton Button4;
-    private javax.swing.JRadioButton Button5;
     private javax.swing.JLabel Capitulo2;
     private javax.swing.JLabel Fechar;
     private javax.swing.JLabel Icon;
