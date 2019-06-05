@@ -1,2 +1,0 @@
-codestation.Navegador
-codestation.Browser

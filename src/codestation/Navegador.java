@@ -18,8 +18,7 @@ import javafx.stage.Stage;
 public class Navegador extends Application {
     private Scene scene;
     @Override public void start(Stage stage) {
-        // create the scene
-        stage.setTitle("Web View");
+        stage.setTitle("Code Station");
         scene = new Scene(new Browser(),810,590, Color.web("#666970"));
         stage.setScene(scene);      
         stage.show();
@@ -39,11 +38,8 @@ class Browser extends Region {
     final WebEngine webEngine = browser.getEngine();
 
     public Browser() {
-        //apply the styles
         getStyleClass().add("browser");
-        // load the web page
         webEngine.load("http://codestation.cf");
-        //add the web view to the scene
         getChildren().add(browser);
 
     }
