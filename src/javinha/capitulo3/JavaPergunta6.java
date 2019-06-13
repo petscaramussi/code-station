@@ -279,7 +279,7 @@ public class JavaPergunta6 extends javax.swing.JFrame {
 
     private void Capitulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo2MouseClicked
         // TODO add your handling code here:
-        JavaChecklist2 j = new JavaChecklist2();
+        JavaChecklist3 j = new JavaChecklist3();
         j.show();
         this.hide();
     }//GEN-LAST:event_Capitulo2MouseClicked

@@ -145,6 +145,11 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
         Capitulo2.setForeground(new java.awt.Color(248, 152, 29));
         Capitulo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Capitulo2.setText("Capítulo 2");
+        Capitulo2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Capitulo2MouseClicked(evt);
+            }
+        });
 
         Capitulo3.setFont(new java.awt.Font("Monospaced", 0, 18)); // NOI18N
         Capitulo3.setForeground(new java.awt.Color(248, 152, 29));
@@ -211,57 +216,57 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
 
         Texto2.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto2.setText("Ouvi dizer que haveria objetos. No Capítulo 1, colocamos todo o código");
+        Texto2.setText("Existem duas versões de variáveis: primitivas e de referência. Até agora ");
         Texto2.setToolTipText("");
 
         Texto3.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto3.setText("no método main( ). Essa não exatamente uma abordagem orientada o objetos");
+        Texto3.setText("você usou variáveis em duas situações: como estado do objeto (variáveis");
         Texto3.setToolTipText("");
 
         Texto4.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto4.setText("Na verdade ela definitivamente não é orientada a objetos. Bem, usamos");
+        Texto4.setText("de instância) e como variáveis locais (variáveis declaradas dentro de um");
         Texto4.setToolTipText("");
 
         Texto5.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto5.setText("alguns objetos, mas não desenvolvemos nenhum tipo de objeto por nossa ");
+        Texto5.setText("método). Posteriormente, usaremos variáveis como argumentos (valores ");
         Texto5.setToolTipText("");
 
         Texto6.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto6.setText("própria conta. Portanto, agora temos que deixar esse universo procedimental");
+        Texto6.setText("para um método pelo código que o chamou) e como tipos de retorno (valores");
         Texto6.setToolTipText("");
 
         Texto7.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto7.setText("Seguidores devotados surgiram, enquanto os programadores combatiam os ");
+        Texto7.setText("retornados ao código que o chamou) e como tipos de retorno (valores ");
         Texto7.setToolTipText("");
 
         Texto8.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto8.setText("para trás, sair de main( ) e começar a criar alguns objetos por nossa ");
+        Texto8.setText(" retornados ao código que chamou o método). Você viu variáveis declaradas");
         Texto8.setToolTipText("");
 
         Texto9.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto9.setText("própria conta. Examinaremos o que torna o desenvolvimento orientado a ");
+        Texto9.setText("como valores inteiros primitivos simples (tipo int). Examinou váriaveis ");
         Texto9.setToolTipText("");
 
         Texto10.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto10.setText("objetos (OO) em java tão divertido. Discutiremos a diferença entre uma");
+        Texto10.setText("declaradas como algo mais complexo do tipo string ou matriz.");
         Texto10.setToolTipText("");
 
         Texto11.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto11.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto11.setText("para fazer até o mesmo applet mais simples funcionar. Mas você pode");
+        Texto11.setText("Neste capítulo desvaleremos os mistérios dos tipos Java e examinaremos o ");
         Texto11.setToolTipText("");
 
         Texto12.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         Texto12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        Texto12.setText("classe e um objeto. Examinaremos como os objetos podem melhorar sua vida");
+        Texto12.setText("que você pode declarar como uma variável, o que pode inserir em uma.");
         Texto12.setToolTipText("");
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -381,7 +386,6 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
 
     private void Capitulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo3MouseClicked
            // TODO add your handling code here:
-           JOptionPane.showMessageDialog(null, "Este capítulo ainda não está disponível\nSentimos muito");
     }//GEN-LAST:event_Capitulo3MouseClicked
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
@@ -390,6 +394,13 @@ public class JavaCapitulo3 extends javax.swing.JFrame {
         j.show();
         this.hide();
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void Capitulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Capitulo2MouseClicked
+        // TODO add your handling code here:
+        JavaCapitulo2 j = new JavaCapitulo2();
+        j.show();
+        this.hide();
+    }//GEN-LAST:event_Capitulo2MouseClicked
 
     /**
      * @param args the command line arguments
